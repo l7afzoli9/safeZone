@@ -6,8 +6,6 @@
   "language": "fr",
   "theme": "system",
   "notifications": {
-    "trip_reminders": true,
-    "contact_alerts": true,
     "zone_updates": false
   },
   "rate_limit": {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Radio, Shield } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Settings, Shield } from 'lucide-react';
 import { useI18n } from '../../i18n';
 import { useApp } from '../../context/AppContext';
 import type { Language } from '../../types';
@@ -9,9 +9,11 @@ import { cn } from '../../lib/cn';
 const LANG_ORDER: Language[] = ['fr', 'ar'];
 
 export const AppHeader: React.FC = () => {
-  const { language, setLanguage, t, formatTimer } = useI18n();
-  const { activeTrip, remainingSeconds, updateSession } = useApp();
+  const { language, setLanguage, t } = useI18n();
+  const { updateSession } = useApp();
   const navigate = useNavigate();
+  const location = useLocation();
+  const isSettings = location.pathname === '/settings';
 
   const handleSelectLang = (lang: Language) => {
     setLanguage(lang);
@@ -34,23 +36,7 @@ export const AppHeader: React.FC = () => {
           </span>
         </button>
 
-        <div className="flex items-center gap-2">
-          {activeTrip && (
-            <button
-              type="button"
-              onClick={() => navigate('/trip/active')}
-              className={cn(
-                'inline-flex min-h-[38px] items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.8125rem] font-bold cursor-pointer',
-                activeTrip.status === 'alerted'
-                  ? 'bg-[var(--alert)] text-[var(--alert-ink)]'
-                  : 'bg-[var(--primary-soft)] text-[var(--primary-soft-ink)]'
-              )}
-            >
-              <Radio className="h-3.5 w-3.5 animate-pulse" aria-hidden="true" />
-              <span className="tabular-nums">{formatTimer(remainingSeconds)}</span>
-            </button>
-          )}
-
+        <div className="flex items-center gap-1.5">
           <div
             role="group"
             aria-label={t('languages.switcherLabel')}
@@ -77,6 +63,21 @@ export const AppHeader: React.FC = () => {
               );
             })}
           </div>
+
+          <button
+            type="button"
+            onClick={() => navigate(isSettings ? '/' : '/settings')}
+            aria-label={t('nav.settings')}
+            aria-current={isSettings ? 'page' : undefined}
+            className={cn(
+              'inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition-colors cursor-pointer',
+              isSettings
+                ? 'border-[var(--primary)] bg-[var(--primary-soft)] text-[var(--primary)]'
+                : 'border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:bg-[var(--bg-subtle)] hover:text-[var(--text-primary)]'
+            )}
+          >
+            <Settings className="h-5 w-5" aria-hidden="true" />
+          </button>
         </div>
       </div>
     </header>

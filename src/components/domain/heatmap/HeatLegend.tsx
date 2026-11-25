@@ -38,6 +38,14 @@ export const HeatLegend: React.FC = () => {
 
         {expanded && (
           <div className="mt-1 flex flex-col gap-2.5 border-t border-[var(--border-subtle)] pt-3">
+            <div
+              aria-hidden="true"
+              className="h-2.5 w-full rounded-full border border-[var(--border-subtle)]"
+              style={{
+                background:
+                  'linear-gradient(to right, #6366F1 0%, #06B6D4 25%, #22C55E 50%, #FACC15 75%, #EF4444 100%)',
+              }}
+            />
             <div className="grid grid-cols-5 gap-1.5">
               {HEAT_BINS.map((bin) => {
                 const bg = resolvedTheme === 'dark' ? bin.darkFill : bin.lightFill;

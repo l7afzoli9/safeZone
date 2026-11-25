@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronRight, EyeOff, MapPin, Navigation, ShieldCheck } from 'lucide-react';
+import { ChevronRight, Compass, EyeOff, MapPin, ShieldCheck } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { useApp } from '../context/AppContext';
 import { Button } from '../components/ui/Button';
@@ -40,7 +40,7 @@ export const OnboardingPage: React.FC = () => {
     }
   };
 
-  const slideIcons = [Navigation, MapPin, EyeOff, ShieldCheck];
+  const slideIcons = [MapPin, Compass, EyeOff, ShieldCheck];
   const ActiveIcon = slideIcons[step] ?? ShieldCheck;
 
   return (

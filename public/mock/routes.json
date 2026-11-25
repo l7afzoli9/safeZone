@@ -17,11 +17,11 @@
       "advisory_key": "routes.advisories.mainBoulevard"
     },
     {
-      "id": "rt_rab_axis",
-      "origin_zone_id": "z_rab_agdal",
-      "destination_zone_id": "z_rab_hassan",
-      "traversed_zone_ids": ["z_rab_agdal", "z_rab_hassan"],
-      "estimated_walk_minutes": 32,
+      "id": "rt_cas_east",
+      "origin_zone_id": "z_cas_gauthier",
+      "destination_zone_id": "z_cas_mers_sultan",
+      "traversed_zone_ids": ["z_cas_gauthier", "z_cas_maarif", "z_cas_mers_sultan"],
+      "estimated_walk_minutes": 22,
       "advisory_key": "routes.advisories.tramCorridor"
     }
   ]

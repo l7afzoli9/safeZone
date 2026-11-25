@@ -154,26 +154,6 @@ export const SettingsPage: React.FC = () => {
           </h2>
           <div className="flex flex-col gap-2.5">
             <ConsentToggle
-              checked={session.notifications.trip_reminders}
-              onCheckedChange={(checked) =>
-                void updateSession({
-                  notifications: { ...session.notifications, trip_reminders: checked },
-                })
-              }
-              label={t('settings.notifTrip')}
-              description={t('settings.notifTripDesc')}
-            />
-            <ConsentToggle
-              checked={session.notifications.contact_alerts}
-              onCheckedChange={(checked) =>
-                void updateSession({
-                  notifications: { ...session.notifications, contact_alerts: checked },
-                })
-              }
-              label={t('settings.notifAlert')}
-              description={t('settings.notifAlertDesc')}
-            />
-            <ConsentToggle
               checked={session.notifications.zone_updates}
               onCheckedChange={(checked) =>
                 void updateSession({

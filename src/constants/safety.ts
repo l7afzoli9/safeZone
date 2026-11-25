@@ -23,8 +23,20 @@ export interface HeatBinSpec {
   darkInk: string;
 }
 
-const lightInterpolator = interpolateRgbBasis(['#B3DDE1', '#4BA3AE', '#0F5C66']);
-const darkInterpolator = interpolateRgbBasis(['#1F4D54', '#38909C', '#7AD1DB']);
+const lightInterpolator = interpolateRgbBasis([
+  '#6366F1',
+  '#06B6D4',
+  '#22C55E',
+  '#FACC15',
+  '#EF4444',
+]);
+const darkInterpolator = interpolateRgbBasis([
+  '#818CF8',
+  '#22D3EE',
+  '#4ADE80',
+  '#FACC15',
+  '#F87171',
+]);
 
 export const HEAT_THRESHOLDS: [number, number, number, number] = [
   MIN_REPORTS + 3,
@@ -39,36 +51,36 @@ export const HEAT_BINS: HeatBinSpec[] = [
     min: MIN_REPORTS,
     max: HEAT_THRESHOLDS[0] - 1,
     lightFill: lightInterpolator(0),
-    lightInk: '#142026',
+    lightInk: '#FFFFFF',
     darkFill: darkInterpolator(0),
-    darkInk: '#EFF3F5',
+    darkInk: '#0F172A',
   },
   {
     step: 1,
     min: HEAT_THRESHOLDS[0],
     max: HEAT_THRESHOLDS[1] - 1,
     lightFill: lightInterpolator(0.25),
-    lightInk: '#142026',
+    lightInk: '#0F172A',
     darkFill: darkInterpolator(0.25),
-    darkInk: '#EFF3F5',
+    darkInk: '#0F172A',
   },
   {
     step: 2,
     min: HEAT_THRESHOLDS[1],
     max: HEAT_THRESHOLDS[2] - 1,
     lightFill: lightInterpolator(0.5),
-    lightInk: '#0D262B',
+    lightInk: '#0F172A',
     darkFill: darkInterpolator(0.5),
-    darkInk: '#082024',
+    darkInk: '#0F172A',
   },
   {
     step: 3,
     min: HEAT_THRESHOLDS[2],
     max: HEAT_THRESHOLDS[3] - 1,
     lightFill: lightInterpolator(0.75),
-    lightInk: '#FFFFFF',
+    lightInk: '#0F172A',
     darkFill: darkInterpolator(0.75),
-    darkInk: '#082024',
+    darkInk: '#0F172A',
   },
   {
     step: 4,
@@ -77,7 +89,7 @@ export const HEAT_BINS: HeatBinSpec[] = [
     lightFill: lightInterpolator(1),
     lightInk: '#FFFFFF',
     darkFill: darkInterpolator(1),
-    darkInk: '#082024',
+    darkInk: '#0F172A',
   },
 ];
 

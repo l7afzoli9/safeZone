@@ -4,53 +4,30 @@ import {
   Compass,
   Flag,
   Home,
-  Map,
   Menu,
-  Navigation,
   Settings,
   ShieldCheck,
-  Users,
 } from 'lucide-react';
 import { useI18n } from '../../i18n';
-import { useApp } from '../../context/AppContext';
 import { cn } from '../../lib/cn';
 import { BottomSheet } from '../ui/BottomSheet';
 
 export const BottomNav: React.FC = () => {
   const { t } = useI18n();
-  const { activeTrip } = useApp();
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const primaryTabs = [
     { to: '/', label: t('nav.home'), icon: Home, end: true },
-    { to: '/zones', label: t('nav.zones'), icon: Map, end: false },
     { to: '/routes', label: t('nav.routes'), icon: Compass, end: false },
-    { to: '/settings', label: t('nav.settings'), icon: Settings, end: false },
+    { to: '/report', label: t('nav.reportShort'), icon: Flag, end: false },
   ];
 
   const secondaryItems = [
     {
-      to: '/map',
-      label: t('heatmap.title'),
-      icon: Map,
-      highlight: false,
-    },
-    {
-      to: activeTrip ? '/trip/active' : '/trip/new',
-      label: activeTrip ? t('nav.activeTrip') : t('home.shareTripCta'),
-      icon: Navigation,
-      highlight: Boolean(activeTrip),
-    },
-    {
-      to: '/contacts',
-      label: t('nav.contacts'),
-      icon: Users,
-    },
-    {
-      to: '/report',
-      label: t('nav.report'),
-      icon: Flag,
+      to: '/settings',
+      label: t('nav.settings'),
+      icon: Settings,
     },
     {
       to: '/onboarding',
@@ -65,7 +42,7 @@ export const BottomNav: React.FC = () => {
         aria-label={t('app.name')}
         className="fixed inset-x-0 bottom-0 z-30 mx-auto w-full max-w-[430px] border-t border-[var(--border-subtle)] bg-[var(--bg-surface)]/95 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-md"
       >
-        <div className="grid grid-cols-5 items-stretch px-1 py-1">
+        <div className="grid grid-cols-4 items-stretch px-1.5 py-1">
           {primaryTabs.map(({ to, label, icon: Icon, end }) => (
             <NavLink
               key={to}
@@ -108,7 +85,7 @@ export const BottomNav: React.FC = () => {
         description={t('nav.secondarySubtitle')}
       >
         <div className="flex flex-col gap-2">
-          {secondaryItems.map(({ to, label, icon: Icon, highlight }) => (
+          {secondaryItems.map(({ to, label, icon: Icon }) => (
             <button
               key={to}
               type="button"
@@ -116,12 +93,7 @@ export const BottomNav: React.FC = () => {
                 setDrawerOpen(false);
                 navigate(to);
               }}
-              className={cn(
-                'flex min-h-[52px] w-full items-center gap-3 rounded-[var(--radius-md)] border px-4 py-3 text-start text-base font-semibold transition-colors cursor-pointer',
-                highlight
-                  ? 'border-[var(--primary)] bg-[var(--primary-soft)] text-[var(--primary-soft-ink)]'
-                  : 'border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:bg-[var(--bg-subtle)]'
-              )}
+              className="flex min-h-[52px] w-full items-center gap-3 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-4 py-3 text-start text-base font-semibold text-[var(--text-primary)] transition-colors hover:bg-[var(--bg-subtle)] cursor-pointer"
             >
               <Icon className="h-5 w-5 shrink-0" aria-hidden="true" />
               <span>{label}</span>

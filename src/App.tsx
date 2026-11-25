@@ -9,13 +9,8 @@ import { AppHeader } from './components/domain/AppHeader';
 import { BottomNav } from './components/domain/BottomNav';
 import { OnboardingPage } from './pages/OnboardingPage';
 import { HomePage } from './pages/HomePage';
-import { StartTripPage } from './pages/StartTripPage';
-import { ActiveTripPage } from './pages/ActiveTripPage';
-import { ContactsPage } from './pages/ContactsPage';
 import { ReportIncidentPage } from './pages/ReportIncidentPage';
-import { ZoneSafetyPage } from './pages/ZoneSafetyPage';
 import { HeatMapScreen } from './pages/HeatMapScreen';
-import { RouteHintsPage } from './pages/RouteHintsPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { LoadingListSkeleton } from './components/domain/EmptyState';
 
@@ -58,13 +53,10 @@ const AppShellRoutes: React.FC = () => {
         <Routes>
           <Route path="/onboarding" element={<OnboardingPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/trip/new" element={<StartTripPage />} />
-          <Route path="/trip/active" element={<ActiveTripPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/report" element={<ReportIncidentPage />} />
-          <Route path="/zones" element={<ZoneSafetyPage />} />
-          <Route path="/map" element={<HeatMapScreen />} />
-          <Route path="/routes" element={<RouteHintsPage />} />
+          <Route path="/routes" element={<HeatMapScreen />} />
+          <Route path="/zones" element={<Navigate to="/routes" replace />} />
+          <Route path="/map" element={<Navigate to="/routes" replace />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

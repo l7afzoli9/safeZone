@@ -23,6 +23,7 @@ import type {
 } from '../../../types';
 import { cn } from '../../../lib/cn';
 import type { SelectedAreaInfo } from './AreaSheet';
+import { ThermalOverlay, type ThermalPoint } from './ThermalOverlay';
 
 interface AreaLayerProps {
   areaType: AreaType;
@@ -30,6 +31,7 @@ interface AreaLayerProps {
   streets: FeatureCollection<LineString, StreetProperties>;
   statsById: Map<string, AreaAggregate>;
   selectedAreaId: string | null;
+  highlightedNeighborhoodIds?: Set<string>;
   onSelectArea: (area: SelectedAreaInfo) => void;
   offline: boolean;
   onTileFailure: () => void;
@@ -79,6 +81,7 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
   streets,
   statsById,
   selectedAreaId,
+  highlightedNeighborhoodIds,
   onSelectArea,
   offline,
   onTileFailure,
@@ -104,6 +107,32 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
   const activeCollection = useMemo<FeatureCollection<Polygon | LineString>>(() => {
     return areaType === 'neighborhood' ? neighborhoods : streets;
   }, [areaType, neighborhoods, streets]);
+
+  const thermalPoints = useMemo<ThermalPoint[]>(() => {
+    const pts: ThermalPoint[] = [];
+    let maxCount = 0;
+    for (const f of activeCollection.features) {
+      const id = (f.properties as { id?: string } | undefined)?.id;
+      const st = id ? statsById.get(id) : undefined;
+      if (st && !st.below_threshold && st.report_count !== null) {
+        if (st.report_count > maxCount) maxCount = st.report_count;
+      }
+    }
+    const denom = Math.max(25, maxCount);
+    for (const f of activeCollection.features) {
+      const id = (f.properties as { id?: string } | undefined)?.id;
+      const st = id ? statsById.get(id) : undefined;
+      if (!st || st.below_threshold || st.report_count === null) continue;
+      const c = centerOfMass(f);
+      const [lng, lat] = c.geometry.coordinates;
+      pts.push({
+        lat,
+        lng,
+        weight: Math.min(1, Math.max(0.22, st.report_count / denom)),
+      });
+    }
+    return pts;
+  }, [activeCollection, statsById]);
 
   const getLocalizedName = (props: NeighborhoodProperties | StreetProperties): string => {
     return language === 'ar' ? props.name_ar : props.name_fr;
@@ -135,12 +164,17 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
     return 11;
   }, [zoom]);
 
+  const highlightSig = useMemo(
+    () => (highlightedNeighborhoodIds ? Array.from(highlightedNeighborhoodIds).sort().join(',') : ''),
+    [highlightedNeighborhoodIds]
+  );
+
   const renderKey = useMemo(() => {
     const statsSig = Array.from(statsById.entries())
       .map(([id, s]) => `${id}:${s.below_threshold ? 'x' : s.report_count}`)
       .join('|');
-    return `${areaType}-${resolvedTheme}-${language}-${zoom}-${selectedAreaId ?? 'none'}-${statsSig}`;
-  }, [areaType, resolvedTheme, language, zoom, selectedAreaId, statsById]);
+    return `${areaType}-${resolvedTheme}-${language}-${zoom}-${selectedAreaId ?? 'none'}-${highlightSig}-${statsSig}`;
+  }, [areaType, resolvedTheme, language, zoom, selectedAreaId, highlightSig, statsById]);
 
   // Offline SVG schematic fallback using @turf/turf bbox
   const svgProjection = useMemo(() => {
@@ -221,16 +255,18 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
                   };
             const isSelected =
               areaType === 'neighborhood' && selectedAreaId === f.properties.id;
+            const isHighlighted =
+              highlightedNeighborhoodIds?.has(f.properties.id) ?? false;
 
             return (
               <path
                 key={f.properties.id}
                 d={svgProjection.polyToPath(f.geometry.coordinates)}
                 fill={colors.fill}
-                fillOpacity={areaType === 'neighborhood' ? colors.fillOpacity : 0}
-                stroke={colors.stroke}
-                strokeWidth={isSelected ? 3 : 1.5}
-                strokeDasharray={colors.dashArray}
+                fillOpacity={areaType === 'neighborhood' ? colors.fillOpacity : isHighlighted ? 0.14 : 0}
+                stroke={isHighlighted ? (resolvedTheme === 'dark' ? '#7AD1DB' : '#0F5C66') : colors.stroke}
+                strokeWidth={isSelected || isHighlighted ? 3 : 1.5}
+                strokeDasharray={isHighlighted ? undefined : colors.dashArray}
                 className={cn(areaType === 'neighborhood' && 'cursor-pointer')}
                 onClick={
                   areaType === 'neighborhood'
@@ -286,7 +322,7 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
   }
 
   return (
-    <div className="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border-subtle)] bg-[var(--bg-subtle)] shadow-[var(--shadow-card)]">
+    <div className="relative overflow-hidden border-y border-[var(--border-subtle)] bg-[var(--bg-subtle)]">
       <MapContainer
         center={[33.586, -7.632]}
         zoom={MAP_ZOOM.default}
@@ -294,7 +330,7 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
         maxZoom={MAP_ZOOM.max}
         zoomControl={false}
         scrollWheelZoom={false}
-        className="h-[340px] w-full"
+        className="h-[370px] w-full"
         aria-label={t('heatmap.mapAriaLabel')}
       >
         <ZoomControl position={dir === 'rtl' ? 'topleft' : 'topright'} />
@@ -319,23 +355,37 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
         {/* Subtle context neighborhood outlines when viewing streets */}
         {areaType === 'street' && (
           <GeoJSON
-            key={`ctx-${resolvedTheme}`}
+            key={`ctx-${resolvedTheme}-${highlightSig}`}
             data={neighborhoods}
             interactive={false}
-            style={() => ({
-              color: resolvedTheme === 'dark' ? '#3B4D58' : '#A9B4BA',
-              weight: 1.25,
-              fillOpacity: 0.04,
-            })}
+            style={(feature) => {
+              const id = feature?.properties?.id as string | undefined;
+              const isHighlighted = id ? highlightedNeighborhoodIds?.has(id) ?? false : false;
+              return {
+                color: isHighlighted
+                  ? resolvedTheme === 'dark'
+                    ? '#7AD1DB'
+                    : '#0F5C66'
+                  : resolvedTheme === 'dark'
+                    ? '#3B4D58'
+                    : '#A9B4BA',
+                weight: isHighlighted ? 2.5 : 1.25,
+                fillOpacity: isHighlighted ? 0.14 : 0.04,
+              };
+            }}
           />
         )}
 
-        {/* Active Choropleth Layer */}
+        {/* Thermal Density Glow Layer (aggregated area centroids only) */}
+        <ThermalOverlay points={thermalPoints} />
+
+        {/* Active Interactive Layer */}
         <GeoJSON
           key={renderKey}
           data={activeCollection}
           style={(feature) => {
             const id = feature?.properties?.id as string | undefined;
+            const neighborId = feature?.properties?.neighborhood_id as string | undefined;
             const stats = id ? statsById.get(id) ?? null : null;
             const isBelow = !stats || stats.below_threshold;
             const colors = getAreaColors(
@@ -344,12 +394,20 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
               resolvedTheme
             );
             const isSelected = id === selectedAreaId;
+            const isHighlighted =
+              areaType === 'street'
+                ? neighborId
+                  ? highlightedNeighborhoodIds?.has(neighborId) ?? false
+                  : false
+                : id
+                  ? highlightedNeighborhoodIds?.has(id) ?? false
+                  : false;
 
             if (areaType === 'street') {
               return {
                 color: isBelow ? colors.stroke : colors.fill,
-                weight: isSelected ? streetWeight + 3 : streetWeight,
-                opacity: isBelow ? 0.85 : 0.92,
+                weight: isSelected ? streetWeight + 3 : isHighlighted ? streetWeight + 2 : streetWeight,
+                opacity: isBelow ? 0.85 : isHighlighted ? 1 : 0.92,
                 lineCap: 'round',
                 lineJoin: 'round',
                 dashArray: colors.dashArray,
@@ -357,11 +415,15 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
             }
 
             return {
-              color: colors.stroke,
-              weight: isSelected ? 3 : 2,
+              color: isHighlighted ? (resolvedTheme === 'dark' ? '#7AD1DB' : '#0F5C66') : colors.stroke,
+              weight: isSelected || isHighlighted ? 3 : 2,
               dashArray: colors.dashArray,
               fillColor: colors.fill,
-              fillOpacity: isSelected ? Math.min(0.75, colors.fillOpacity + 0.16) : colors.fillOpacity,
+              fillOpacity: isSelected
+                ? Math.min(0.75, colors.fillOpacity + 0.16)
+                : isHighlighted
+                  ? Math.min(0.68, colors.fillOpacity + 0.1)
+                  : colors.fillOpacity,
             };
           }}
           onEachFeature={(feature, layer) => {

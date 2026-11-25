@@ -10,9 +10,13 @@ export type TimeBucket = 'morning' | 'afternoon' | 'evening' | 'night';
 
 export type TimeBucketFilter = TimeBucket | 'all';
 
-export type ReportStatus = 'active' | 'disputed' | 'hidden' | 'expired';
+export type IncidentType =
+  | 'theft'
+  | 'harassment'
+  | 'suspicious_activity'
+  | 'other';
 
-export type TripStatus = 'active' | 'paused' | 'ended' | 'expired' | 'alerted';
+export type ReportStatus = 'active' | 'disputed' | 'hidden' | 'expired';
 
 export type VoteChoice = 'confirm' | 'dispute';
 
@@ -57,37 +61,6 @@ export interface ReportsPayload {
   reports: IncidentReport[];
 }
 
-export interface TrustedContact {
-  id: string;
-  name: string;
-  phone: string;
-  relation_key: string;
-  created_at: string;
-  updated_at: string;
-}
-
-export interface ContactsPayload {
-  contacts: TrustedContact[];
-}
-
-export interface ActiveTrip {
-  id: string;
-  status: TripStatus;
-  duration_minutes: number;
-  started_at: string;
-  ends_at: string;
-  paused_at: string | null;
-  remaining_seconds_on_pause: number | null;
-  contact_ids: string[];
-  note: string;
-  coarse_zone_id: string;
-  alert_triggered_at: string | null;
-}
-
-export interface TripPayload {
-  active_trip: ActiveTrip | null;
-}
-
 export interface RouteHintPreset {
   id: string;
   origin_zone_id: string;
@@ -102,8 +75,6 @@ export interface RoutesPayload {
 }
 
 export interface NotificationPrefs {
-  trip_reminders: boolean;
-  contact_alerts: boolean;
   zone_updates: boolean;
 }
 
@@ -120,12 +91,6 @@ export interface UserSession {
     max_reports_per_hour: number;
   };
 }
-
-export type IncidentType =
-  | 'theft'
-  | 'harassment'
-  | 'suspicious_activity'
-  | 'other';
 
 export interface NeighborhoodProperties {
   id: string;
@@ -186,18 +151,9 @@ export interface CreateReportInput {
   is_anonymous: boolean;
 }
 
-export interface CreateTripInput {
-  duration_minutes: number;
-  contact_ids: string[];
-  note: string;
-  coarse_zone_id: string;
-}
-
 export interface ExportedUserData {
   exported_at: string;
   schema_version: string;
   session: UserSession;
-  trusted_contacts: TrustedContact[];
-  active_trip: ActiveTrip | null;
   submitted_reports: IncidentReport[];
 }

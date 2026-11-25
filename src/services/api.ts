@@ -1,13 +1,10 @@
 import type { FeatureCollection, LineString, Polygon } from 'geojson';
 import type {
-  ActiveTrip,
   AreaAggregate,
   AreaByType,
   AreaStatsPayload,
   AreaType,
-  ContactsPayload,
   CreateReportInput,
-  CreateTripInput,
   ExportedUserData,
   IncidentReport,
   NeighborhoodProperties,
@@ -18,14 +15,12 @@ import type {
   StreetProperties,
   TimeBucket,
   TimeBucketFilter,
-  TrustedContact,
   UserSession,
   VoteChoice,
   Zone,
   ZonesPayload,
 } from '../types';
 import { MIN_REPORTS } from '../constants/safety';
-import { normalizeMoroccanPhone } from '../lib/validation';
 import { storage } from './storage';
 
 /**
@@ -33,22 +28,17 @@ import { storage } from './storage';
  * Currently backed by /mock/*.json + localStorage persistence.
  *
  * Future PHP + MySQL swap points:
- * - getZones()               -> GET  /api/zones.php
- * - getNeighborhoodsGeoJson()-> GET  /api/areas.php?format=geojson&type=neighborhood
- * - getStreetsGeoJson()      -> GET  /api/areas.php?format=geojson&type=street
- * - getAreaStats()           -> GET  /api/areas?type=street|neighborhood&time_bucket=...&window=...
- * - getReports()             -> GET  /api/reports.php?zone_id=...
- * - submitReport()           -> POST /api/reports.php
- * - voteReport()             -> POST /api/reports.php?action=vote
- * - getContacts()            -> GET  /api/contacts.php
- * - saveContact()            -> POST/PUT /api/contacts.php
- * - deleteContact()          -> DELETE /api/contacts.php?id=...
- * - startTrip()              -> POST /api/trips.php
- * - patchTrip()              -> PATCH /api/trips.php?id=...
- * - getRoutePresets()        -> GET  /api/route-hints.php
- * - getSession()             -> GET  /api/me.php
- * - exportMyData()           -> GET  /api/export.php
- * - deleteMyData()           -> DELETE /api/me.php
+ * - getZones()                -> GET    /api/zones.php
+ * - getNeighborhoodsGeoJson() -> GET    /api/areas.php?format=geojson&type=neighborhood
+ * - getStreetsGeoJson()       -> GET    /api/areas.php?format=geojson&type=street
+ * - getAreaStats()            -> GET    /api/areas?type=street|neighborhood&time_bucket=...&window=...
+ * - getReports()              -> GET    /api/reports.php?zone_id=...
+ * - submitReport()            -> POST   /api/reports.php
+ * - voteReport()              -> POST   /api/reports.php?action=vote
+ * - getRoutePresets()         -> GET    /api/route-hints.php
+ * - getSession()              -> GET    /api/me.php
+ * - exportMyData()            -> GET    /api/export.php
+ * - deleteMyData()            -> DELETE /api/me.php
  */
 
 async function fetchMockJson<T>(path: string): Promise<T> {
@@ -357,149 +347,17 @@ export const api = {
     storage.setReportVotes(votes);
   },
 
-  async getContacts(): Promise<TrustedContact[]> {
-    if (storage.isContactsInitialized()) {
-      return storage.getContacts();
-    }
-    const seed = await fetchMockJson<ContactsPayload>('/mock/contacts.json');
-    storage.setContacts(seed.contacts);
-    return seed.contacts;
-  },
-
-  async saveContact(input: {
-    id?: string;
-    name: string;
-    phone: string;
-    relation_key: string;
-  }): Promise<TrustedContact[]> {
-    const current = await this.getContacts();
-    const now = new Date().toISOString();
-    const normalizedPhone = normalizeMoroccanPhone(input.phone);
-
-    let next: TrustedContact[];
-    if (input.id) {
-      next = current.map((c) =>
-        c.id === input.id
-          ? {
-              ...c,
-              name: input.name.trim(),
-              phone: normalizedPhone,
-              relation_key: input.relation_key,
-              updated_at: now,
-            }
-          : c
-      );
-    } else {
-      const created: TrustedContact = {
-        id: createId('cnt'),
-        name: input.name.trim(),
-        phone: normalizedPhone,
-        relation_key: input.relation_key,
-        created_at: now,
-        updated_at: now,
-      };
-      next = [created, ...current];
-    }
-
-    storage.setContacts(next);
-    return next;
-  },
-
-  async deleteContact(id: string): Promise<TrustedContact[]> {
-    const current = await this.getContacts();
-    const next = current.filter((c) => c.id !== id);
-    storage.setContacts(next);
-    return next;
-  },
-
-  async getActiveTrip(): Promise<ActiveTrip | null> {
-    const localTrip = storage.getActiveTrip();
-    if (localTrip) return localTrip;
-    await fetchMockJson<{ active_trip: ActiveTrip | null }>('/mock/trip.json');
-    return null;
-  },
-
-  async startTrip(input: CreateTripInput): Promise<ActiveTrip> {
-    const now = new Date();
-    const endsAt = new Date(now.getTime() + input.duration_minutes * 60 * 1000);
-    const trip: ActiveTrip = {
-      id: createId('trp'),
-      status: 'active',
-      duration_minutes: input.duration_minutes,
-      started_at: now.toISOString(),
-      ends_at: endsAt.toISOString(),
-      paused_at: null,
-      remaining_seconds_on_pause: null,
-      contact_ids: input.contact_ids,
-      note: input.note.trim(),
-      coarse_zone_id: input.coarse_zone_id,
-      alert_triggered_at: null,
-    };
-    storage.setActiveTrip(trip);
-    return trip;
-  },
-
-  async pauseTrip(trip: ActiveTrip): Promise<ActiveTrip> {
-    const remainingSec = Math.max(
-      0,
-      Math.floor((new Date(trip.ends_at).getTime() - Date.now()) / 1000)
-    );
-    const updated: ActiveTrip = {
-      ...trip,
-      status: 'paused',
-      paused_at: new Date().toISOString(),
-      remaining_seconds_on_pause: remainingSec,
-    };
-    storage.setActiveTrip(updated);
-    return updated;
-  },
-
-  async resumeTrip(trip: ActiveTrip): Promise<ActiveTrip> {
-    const remainingSec = trip.remaining_seconds_on_pause ?? 0;
-    const nextEndsAt = new Date(Date.now() + remainingSec * 1000).toISOString();
-    const updated: ActiveTrip = {
-      ...trip,
-      status: 'active',
-      ends_at: nextEndsAt,
-      paused_at: null,
-      remaining_seconds_on_pause: null,
-    };
-    storage.setActiveTrip(updated);
-    return updated;
-  },
-
-  async triggerTripAlert(trip: ActiveTrip): Promise<ActiveTrip> {
-    const updated: ActiveTrip = {
-      ...trip,
-      status: 'alerted',
-      alert_triggered_at: new Date().toISOString(),
-    };
-    storage.setActiveTrip(updated);
-    return updated;
-  },
-
-  async endTrip(): Promise<void> {
-    // Privacy rule: transient active trip state is completely deleted upon trip end
-    storage.setActiveTrip(null);
-  },
-
   async getRoutePresets(): Promise<RouteHintPreset[]> {
     const payload = await fetchMockJson<RoutesPayload>('/mock/routes.json');
     return payload.preset_routes;
   },
 
   async exportMyData(): Promise<ExportedUserData> {
-    const [session, contacts, activeTrip] = await Promise.all([
-      this.getSession(),
-      this.getContacts(),
-      this.getActiveTrip(),
-    ]);
+    const session = await this.getSession();
     return {
       exported_at: new Date().toISOString(),
-      schema_version: '1.0.0',
+      schema_version: '1.2.0',
       session,
-      trusted_contacts: contacts,
-      active_trip: activeTrip,
       submitted_reports: storage.getUserReports(),
     };
   },

@@ -36,7 +36,7 @@ export const ZoneBadge: React.FC<ZoneBadgeProps> = ({
         <Badge tone={isSufficient ? 'warning' : 'neutral'}>
           {isSufficient
             ? `${formatNumber(zone.report_count)} · ${t('common.unverifiedLabel')}`
-            : t('zones.belowThresholdTitle')}
+            : t('heatmap.belowThresholdTitle')}
         </Badge>
       )}
     </div>
