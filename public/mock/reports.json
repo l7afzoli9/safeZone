@@ -1,0 +1,60 @@
+{
+  "reports": [
+    {
+      "id": "rep_901",
+      "zone_id": "z_cas_maarif",
+      "incident_type": "theft",
+      "time_bucket": "evening",
+      "note": null,
+      "note_key": "mockReports.rep_901",
+      "is_anonymous": true,
+      "created_at": "2026-11-24T15:20:00Z",
+      "expires_at": "2026-12-08T15:20:00Z",
+      "status": "active",
+      "confirm_count": 3,
+      "dispute_count": 0
+    },
+    {
+      "id": "rep_902",
+      "zone_id": "z_cas_gauthier",
+      "incident_type": "harassment",
+      "time_bucket": "night",
+      "note": null,
+      "note_key": "mockReports.rep_902",
+      "is_anonymous": true,
+      "created_at": "2026-11-24T13:10:00Z",
+      "expires_at": "2026-12-08T13:10:00Z",
+      "status": "active",
+      "confirm_count": 2,
+      "dispute_count": 0
+    },
+    {
+      "id": "rep_903",
+      "zone_id": "z_cas_racine",
+      "incident_type": "suspicious_activity",
+      "time_bucket": "evening",
+      "note": null,
+      "note_key": "mockReports.rep_903",
+      "is_anonymous": true,
+      "created_at": "2026-11-23T21:45:00Z",
+      "expires_at": "2026-12-07T21:45:00Z",
+      "status": "active",
+      "confirm_count": 4,
+      "dispute_count": 1
+    },
+    {
+      "id": "rep_904",
+      "zone_id": "z_rab_agdal",
+      "incident_type": "theft",
+      "time_bucket": "afternoon",
+      "note": null,
+      "note_key": "mockReports.rep_904",
+      "is_anonymous": true,
+      "created_at": "2026-11-24T14:05:00Z",
+      "expires_at": "2026-12-08T14:05:00Z",
+      "status": "active",
+      "confirm_count": 1,
+      "dispute_count": 0
+    }
+  ]
+}

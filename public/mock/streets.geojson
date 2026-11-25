@@ -1,0 +1,239 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_zerktouni_w",
+        "name_ar": "شارع الزرقطوني (المعاريف)",
+        "name_fr": "Boulevard Zerktouni (Maârif)",
+        "neighborhood_id": "z_cas_maarif"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6392, 33.5878], [-7.6322, 33.5872], [-7.6252, 33.5867]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_al_massira",
+        "name_ar": "شارع المسيرة الخضراء",
+        "name_fr": "Boulevard Al Massira Al Khadra",
+        "neighborhood_id": "z_cas_maarif"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6388, 33.5844], [-7.6320, 33.5842], [-7.6255, 33.5840]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_roudani",
+        "name_ar": "شارع إبراهيم الروداني",
+        "name_fr": "Boulevard Brahim Roudani",
+        "neighborhood_id": "z_cas_maarif"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6365, 33.5882], [-7.6362, 33.5835], [-7.6358, 33.5792]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_normandie",
+        "name_ar": "شارع نورماندي",
+        "name_fr": "Rue de Normandie",
+        "neighborhood_id": "z_cas_maarif"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6335, 33.5820], [-7.6295, 33.5818], [-7.6258, 33.5815]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_anfa_bd",
+        "name_ar": "شارع أنفا (غوتييه)",
+        "name_fr": "Boulevard d'Anfa (Gauthier)",
+        "neighborhood_id": "z_cas_gauthier"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6340, 33.5936], [-7.6270, 33.5932], [-7.6202, 33.5928]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_jean_jaures",
+        "name_ar": "زنقة جان جوريس",
+        "name_fr": "Rue Jean Jaurès",
+        "neighborhood_id": "z_cas_gauthier"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6318, 33.5912], [-7.6265, 33.5910], [-7.6212, 33.5908]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_moulay_youssef",
+        "name_ar": "شارع مولاي يوسف",
+        "name_fr": "Boulevard Moulay Youssef",
+        "neighborhood_id": "z_cas_gauthier"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6255, 33.5950], [-7.6252, 33.5918], [-7.6248, 33.5890]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_bd_bordeaux",
+        "name_ar": "شارع بوردو",
+        "name_fr": "Boulevard de Bordeaux",
+        "neighborhood_id": "z_cas_racine"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6478, 33.5928], [-7.6415, 33.5925], [-7.6352, 33.5922]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_abdelkrim_khattabi",
+        "name_ar": "شارع عبد الكريم الخطابي",
+        "name_fr": "Boulevard Abdelkrim Al Khattabi",
+        "neighborhood_id": "z_cas_racine"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6442, 33.5950], [-7.6438, 33.5920], [-7.6434, 33.5890]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_taza",
+        "name_ar": "زنقة تازة",
+        "name_fr": "Rue de Taza",
+        "neighborhood_id": "z_cas_racine"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6470, 33.5902], [-7.6412, 33.5900], [-7.6358, 33.5898]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_bourgogne_bd",
+        "name_ar": "شارع بورغون",
+        "name_fr": "Boulevard de Bourgogne",
+        "neighborhood_id": "z_cas_bourgogne"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6480, 33.5992], [-7.6395, 33.5988], [-7.6312, 33.5985]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_ben_tachfine",
+        "name_ar": "شارع تانيت (بورغون)",
+        "name_fr": "Rue Tanit (Bourgogne)",
+        "neighborhood_id": "z_cas_bourgogne"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6435, 33.6022], [-7.6430, 33.5990], [-7.6425, 33.5960]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_zerktouni_e",
+        "name_ar": "شارع الزرقطوني (مرس السلطان)",
+        "name_fr": "Boulevard Zerktouni (Mers Sultan)",
+        "neighborhood_id": "z_cas_mers_sultan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6240, 33.5865], [-7.6168, 33.5858], [-7.6095, 33.5852]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_2mars",
+        "name_ar": "شارع 2 مارس",
+        "name_fr": "Boulevard 2 Mars",
+        "neighborhood_id": "z_cas_mers_sultan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6165, 33.5880], [-7.6160, 33.5830], [-7.6155, 33.5782]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_oasis_st",
+        "name_ar": "شارع عبد المومن (الوازيس)",
+        "name_fr": "Avenue Abdelmoumen (Oasis)",
+        "neighborhood_id": "z_cas_oasis"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6380, 33.5638], [-7.6325, 33.5605], [-7.6265, 33.5568]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_oasis_gare",
+        "name_ar": "محيط محطة الوازيس",
+        "name_fr": "Axe Gare Oasis",
+        "neighborhood_id": "z_cas_oasis"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6415, 33.5592], [-7.6345, 33.5590], [-7.6275, 33.5588]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_corniche_anfa",
+        "name_ar": "طريق أنفا الساحلية",
+        "name_fr": "Boulevard de la Corniche (Anfa)",
+        "neighborhood_id": "z_cas_anfa"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6640, 33.5968], [-7.6572, 33.5955], [-7.6502, 33.5944]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "st_cas_franklin_roosevelt",
+        "name_ar": "شارع فرانكلين روزفلت",
+        "name_fr": "Boulevard Franklin Roosevelt",
+        "neighborhood_id": "z_cas_anfa"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-7.6605, 33.5920], [-7.6552, 33.5915], [-7.6502, 33.5910]]
+      }
+    }
+  ]
+}

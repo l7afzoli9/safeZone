@@ -1,0 +1,226 @@
+{
+  "min_display_threshold": 5,
+  "window_days": 14,
+  "zones": [
+    {
+      "id": "z_cas_maarif",
+      "zone_code": "MA-CAS-014",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.maarif",
+      "center": [33.5844, -7.6324],
+      "polygon": [
+        [33.5892, -7.6395],
+        [33.5892, -7.6248],
+        [33.5796, -7.6248],
+        [33.5796, -7.6395]
+      ],
+      "report_count": 8,
+      "latest_report_at": "2026-11-24T15:20:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 4,
+        "harassment": 2,
+        "suspicious_activity": 2,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_gauthier",
+      "zone_code": "MA-CAS-011",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.gauthier",
+      "center": [33.5912, -7.6265],
+      "polygon": [
+        [33.5955, -7.6335],
+        [33.5955, -7.6195],
+        [33.5892, -7.6195],
+        [33.5892, -7.6335]
+      ],
+      "report_count": 6,
+      "latest_report_at": "2026-11-24T13:10:00Z",
+      "dominant_time_bucket": "night",
+      "category_counts": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_racine",
+      "zone_code": "MA-CAS-012",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.racine",
+      "center": [33.5908, -7.6412],
+      "polygon": [
+        [33.5952, -7.6485],
+        [33.5952, -7.6345],
+        [33.5885, -7.6345],
+        [33.5885, -7.6485]
+      ],
+      "report_count": 5,
+      "latest_report_at": "2026-11-23T21:45:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious_activity": 2,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_oasis",
+      "zone_code": "MA-CAS-022",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.oasis",
+      "center": [33.5578, -7.6345],
+      "polygon": [
+        [33.5625, -7.6425],
+        [33.5625, -7.6265],
+        [33.5530, -7.6265],
+        [33.5530, -7.6425]
+      ],
+      "report_count": 3,
+      "latest_report_at": "2026-11-22T18:30:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_anfa",
+      "zone_code": "MA-CAS-008",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.anfa",
+      "center": [33.5948, -7.6565],
+      "polygon": [
+        [33.5998, -7.6650],
+        [33.5998, -7.6490],
+        [33.5898, -7.6490],
+        [33.5898, -7.6650]
+      ],
+      "report_count": 2,
+      "latest_report_at": "2026-11-21T19:15:00Z",
+      "dominant_time_bucket": "night",
+      "category_counts": {
+        "theft": 1,
+        "harassment": 0,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_mers_sultan",
+      "zone_code": "MA-CAS-018",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.mersSultan",
+      "center": [33.5830, -7.6165],
+      "polygon": [
+        [33.5886, -7.6245],
+        [33.5886, -7.6085],
+        [33.5775, -7.6085],
+        [33.5775, -7.6245]
+      ],
+      "report_count": 7,
+      "latest_report_at": "2026-11-24T12:15:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious_activity": 2,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_cas_bourgogne",
+      "zone_code": "MA-CAS-009",
+      "city_key": "zones.cities.casablanca",
+      "name_key": "zones.names.bourgogne",
+      "center": [33.5992, -7.6398],
+      "polygon": [
+        [33.6030, -7.6490],
+        [33.6030, -7.6305],
+        [33.5955, -7.6305],
+        [33.5955, -7.6490]
+      ],
+      "report_count": 5,
+      "latest_report_at": "2026-11-23T19:40:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious_activity": 1,
+        "other": 1
+      }
+    },
+    {
+      "id": "z_rab_agdal",
+      "zone_code": "MA-RAB-005",
+      "city_key": "zones.cities.rabat",
+      "name_key": "zones.names.agdal",
+      "center": [33.9982, -6.8488],
+      "polygon": [
+        [34.0040, -6.8570],
+        [34.0040, -6.8405],
+        [33.9925, -6.8405],
+        [33.9925, -6.8570]
+      ],
+      "report_count": 7,
+      "latest_report_at": "2026-11-24T14:05:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 3,
+        "harassment": 3,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_rab_hassan",
+      "zone_code": "MA-RAB-002",
+      "city_key": "zones.cities.rabat",
+      "name_key": "zones.names.hassan",
+      "center": [34.0205, -6.8278],
+      "polygon": [
+        [34.0260, -6.8360],
+        [34.0260, -6.8195],
+        [34.0150, -6.8195],
+        [34.0150, -6.8360]
+      ],
+      "report_count": 4,
+      "latest_report_at": "2026-11-23T20:10:00Z",
+      "dominant_time_bucket": "evening",
+      "category_counts": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    },
+    {
+      "id": "z_rab_ryad",
+      "zone_code": "MA-RAB-011",
+      "city_key": "zones.cities.rabat",
+      "name_key": "zones.names.hayRiad",
+      "center": [33.9585, -6.8678],
+      "polygon": [
+        [33.9645, -6.8765],
+        [33.9645, -6.8595],
+        [33.9525, -6.8595],
+        [33.9525, -6.8765]
+      ],
+      "report_count": 1,
+      "latest_report_at": "2026-11-20T16:40:00Z",
+      "dominant_time_bucket": "afternoon",
+      "category_counts": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious_activity": 1,
+        "other": 0
+      }
+    }
+  ]
+}

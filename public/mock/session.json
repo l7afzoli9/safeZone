@@ -1,0 +1,17 @@
+{
+  "pseudonym": "amin_7f4a",
+  "onboarding_completed": false,
+  "location_consent": false,
+  "consent_updated_at": null,
+  "language": "fr",
+  "theme": "system",
+  "notifications": {
+    "trip_reminders": true,
+    "contact_alerts": true,
+    "zone_updates": false
+  },
+  "rate_limit": {
+    "recent_report_timestamps": [],
+    "max_reports_per_hour": 3
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "app": {
+    "name": "Amin",
+    "tagline": "Sécurité communautaire et partage de trajet au Maroc",
+    "pageTitle": "Amin — Sécurité communautaire",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "nav": {
+    "home": "Accueil",
+    "zones": "Zones",
+    "routes": "Itinéraires",
+    "settings": "Réglages",
+    "more": "Plus",
+    "contacts": "Contacts de confiance",
+    "report": "Signaler un incident",
+    "activeTrip": "Trajet actif",
+    "openMenu": "Ouvrir le menu secondaire",
+    "closeMenu": "Fermer le menu",
+    "secondaryTitle": "Outils et raccourcis",
+    "secondarySubtitle": "Accès rapide aux contacts, signalements et paramètres"
+  },
+  "languages": {
+    "switcherLabel": "Langue de l'application",
+    "fr": "Français",
+    "ar": "العربية",
+    "short": {
+      "fr": "FR",
+      "ar": "ع"
+    }
+  },
+  "themes": {
+    "label": "Apparence",
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "common": {
+    "back": "Retour",
+    "next": "Suivant",
+    "continue": "Continuer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "remove": "Retirer",
+    "add": "Ajouter",
+    "close": "Fermer",
+    "retry": "Réessayer",
+    "loading": "Chargement en cours…",
+    "errorTitle": "Impossible de charger ces données",
+    "errorDesc": "Vérifiez votre connexion ou réessayez dans un instant.",
+    "optional": "Facultatif",
+    "minutesShort": "min",
+    "phase2Badge": "Aperçu Phase 2",
+    "unverifiedLabel": "Signalé par les utilisateurs, non vérifié",
+    "justNow": "À l'instant",
+    "anonymousBadge": "Anonyme"
+  },
+  "emergency": {
+    "cardTitle": "Urgences officielles",
+    "cardSubtitle": "Amin complète les services officiels sans jamais les remplacer.",
+    "policeLabel": "Police (DGSN)",
+    "policeNumber": "19",
+    "policeAria": "Appeler la Police DGSN au 19",
+    "gendarmerieLabel": "Gendarmerie Royale",
+    "gendarmerieNumber": "177",
+    "gendarmerieAria": "Appeler la Gendarmerie Royale au 177",
+    "bannerReminder": "En cas d'urgence immédiate, appelez le 19 (Police) ou le 177 (Gendarmerie).",
+    "confirmCallHint": "Appuyez pour lancer l'appel téléphonique"
+  },
+  "onboarding": {
+    "skipToConsent": "Passer au consentement",
+    "stepIndicator": "Étape {{current}} sur {{total}}",
+    "slide1": {
+      "title": "Rentrez sereinement avec vos proches",
+      "body": "Partagez un trajet minuté avec vos contacts de confiance. Dès que vous arrivez ou que le délai se termine, le partage s'arrête automatiquement.",
+      "highlight": "Aucun historique de vos déplacements n'est conservé."
+    },
+    "slide2": {
+      "title": "Une entraide locale sans exposition",
+      "body": "Signalez un incident par quartier approximatif et tranche horaire afin d'aider les habitants à rester attentifs.",
+      "highlight": "Aucune coordonnée GPS exacte n'est envoyée pour un signalement."
+    },
+    "slide3": {
+      "title": "Ce qu'Amin ne fait jamais",
+      "body": "Nous concevons la sécurité communautaire dans le respect strict de votre vie privée et de la loi marocaine 09-08.",
+      "notTitle": "Engagements fermes",
+      "notList": [
+        "Aucun suivi ni historique de vos trajets habituels",
+        "Aucune carte publique montrant où se trouvent les personnes",
+        "Aucune note de danger ni classement de quartier"
+      ]
+    },
+    "consent": {
+      "title": "Votre consentement de localisation",
+      "summary": "La localisation sert uniquement pendant un trajet actif pour informer vos contacts choisis ou estimer votre quartier approximatif sur votre appareil.",
+      "toggleLabel": "Autoriser l'accès à la localisation pour les trajets",
+      "toggleDesc": "Désactivable à tout moment dans les réglages. Sans localisation, le partage de trajet utilise votre zone choisie manuellement.",
+      "privacyLink": "Lire la politique de confidentialité (Loi 09-08)",
+      "startBtn": "Commencer avec Amin",
+      "withoutLocationNote": "Vous pouvez continuer sans géolocalisation et l'activer plus tard."
+    }
+  },
+  "privacy": {
+    "sheetTitle": "Politique de confidentialité et protection des données",
+    "lawReference": "Conforme aux principes de minimisation de la Loi 09-08 (CNDP — Maroc).",
+    "sections": [
+      {
+        "title": "1. Minimisation par zones approximatives",
+        "body": "Les coordonnées précises sont converties en quartier ou cellule de grille directement sur votre appareil avant tout envoi de signalement."
+      },
+      {
+        "title": "2. Aucune conservation des trajets",
+        "body": "Les informations d'un trajet actif sont temporaires et supprimées dès que vous terminez votre trajet ou à l'expiration du minuteur."
+      },
+      {
+        "title": "3. Signalements anonymes et expiration",
+        "body": "Les signalements sont anonymes par défaut, soumis à une limite anti-abus et expirent automatiquement après 14 jours."
+      },
+      {
+        "title": "4. Vos droits d'accès et de suppression",
+        "body": "Vous pouvez exporter l'ensemble de vos données locales au format JSON ou tout effacer en un geste depuis les réglages."
+      }
+    ]
+  },
+  "home": {
+    "greeting": "Restez serein lors de vos déplacements",
+    "heroTitle": "Partager mon trajet",
+    "heroSubtitle": "Choisissez une durée et prévenez vos contacts de confiance en toute discrétion.",
+    "shareTripCta": "Partager mon trajet",
+    "activeTripBannerTitle": "Partage de trajet en cours",
+    "activeTripBannerCta": "Voir le trajet",
+    "quickReportTitle": "Signaler un incident",
+    "quickReportDesc": "Partagez un fait par quartier et créneau horaire, anonymement.",
+    "quickReportCta": "Signaler",
+    "recentReportsTitle": "Signalements récents à proximité",
+    "recentReportsSubtitle": "Informations communautaires récentes par quartier",
+    "viewZonesLink": "Voir les zones",
+    "emptyReportsTitle": "Aucun signalement récent",
+    "emptyReportsDesc": "Les nouveaux signalements de votre secteur apparaîtront ici.",
+    "contactsShortcutTitle": "Contacts de confiance",
+    "contactsShortcutCount": "{{count}} contact(s) enregistré(s)"
+  },
+  "startTrip": {
+    "title": "Démarrer un trajet",
+    "subtitle": "Définissez la durée estimée et sélectionnez qui peut suivre ce trajet.",
+    "durationLabel": "Durée du trajet",
+    "customChip": "Autre",
+    "customLabel": "Durée personnalisée (minutes)",
+    "customPlaceholder": "Ex. 45",
+    "customErrorRange": "Veuillez saisir une durée entre 5 et 240 minutes.",
+    "contactsLabel": "Contacts de confiance",
+    "contactsHint": "Sélectionnez au moins un contact à informer.",
+    "contactsEmpty": "Aucun contact de confiance pour le moment.",
+    "manageContactsCta": "Gérer mes contacts",
+    "contactsRequiredError": "Sélectionnez au moins un contact de confiance.",
+    "zoneLabel": "Zone de départ approximative",
+    "zoneHelper": "Seule votre zone générale est affichée.",
+    "noteLabel": "Note de trajet",
+    "notePlaceholder": "Ex. Retour en tramway depuis le centre",
+    "startCta": "Lancer le trajet",
+    "confirmTitle": "Confirmer le partage de trajet",
+    "confirmDesc": "Seules vos personnes choisies verront votre statut pendant ce trajet.",
+    "confirmSummaryDuration": "Durée prévue : {{minutes}} min",
+    "confirmSummaryContacts": "{{count}} contact(s) sélectionné(s)",
+    "confirmSummaryPrivacy": "Les données du trajet seront supprimées dès la fin du partage.",
+    "confirmStartBtn": "Activer le partage",
+    "consentBanner": "La localisation en direct est désactivée dans vos préférences.",
+    "enableConsentBtn": "Activer maintenant",
+    "startedToast": "Partage de trajet activé."
+  },
+  "activeTrip": {
+    "title": "Trajet en cours",
+    "statusOn": "Partage de position ACTIVÉ",
+    "statusPaused": "Partage en PAUSE",
+    "statusAlerted": "Alerte envoyée aux contacts",
+    "remainingLabel": "Temps restant",
+    "contactsFollowing": "{{count}} contact(s) informé(s)",
+    "currentZoneLabel": "Zone approximative actuelle",
+    "pauseBtn": "Mettre en pause",
+    "resumeBtn": "Reprendre",
+    "endBtn": "Je suis bien arrivé(e), terminer",
+    "endConfirmTitle": "Terminer le trajet ?",
+    "endConfirmDesc": "Le partage s'arrêtera immédiatement et les données temporaires de ce trajet seront supprimées.",
+    "endConfirmBtn": "Terminer le trajet",
+    "alertBtn": "Alerter mes contacts maintenant",
+    "alertConfirmTitle": "Envoyer une alerte immédiate ?",
+    "alertConfirmDesc": "Vos {{count}} contact(s) sélectionné(s) recevront une notification urgente avec votre zone actuelle. Pour un danger immédiat, appelez le 19 ou le 177.",
+    "alertConfirmBtn": "Confirmer et alerter",
+    "alertSentTitle": "Alerte transmise à vos contacts",
+    "alertSentDesc": "Vos contacts de confiance ont été notifiés. Si vous avez besoin des secours, appelez directement ci-dessous.",
+    "endedToast": "Trajet terminé et données effacées.",
+    "expiredTitle": "Le minuteur du trajet est arrivé à échéance",
+    "expiredDesc": "Le partage temporaire s'est arrêté automatiquement.",
+    "noActiveTitle": "Aucun trajet actif",
+    "noActiveDesc": "Démarrez un nouveau trajet lorsque vous souhaitez être accompagné(e) à distance.",
+    "startNewCta": "Démarrer un trajet",
+    "pausedAnnouncement": "Partage de localisation mis en pause.",
+    "resumedAnnouncement": "Partage de localisation repris."
+  },
+  "contacts": {
+    "title": "Contacts de confiance",
+    "subtitle": "Personnes prévenues lorsque vous partagez un trajet ou envoyez une alerte.",
+    "addBtn": "Ajouter un contact",
+    "addTitle": "Nouveau contact de confiance",
+    "editTitle": "Modifier le contact",
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "Ex. Salma Bennani",
+    "phoneLabel": "Numéro de téléphone marocain",
+    "phonePlaceholder": "+212 6 61 23 45 67 ou 0661234567",
+    "phoneHint": "Format accepté : 06/07xxxxxxxx ou +212 6/7xxxxxxxx",
+    "relationLabel": "Lien",
+    "relations": {
+      "family": "Famille",
+      "friend": "Ami(e)",
+      "colleague": "Collègue",
+      "neighbor": "Voisin(e)"
+    },
+    "errors": {
+      "nameRequired": "Veuillez saisir le nom du contact.",
+      "nameTooShort": "Le nom doit contenir au moins 2 caractères.",
+      "phoneRequired": "Veuillez saisir un numéro de téléphone.",
+      "phoneInvalid": "Numéro marocain invalide (utilisez 06/07 ou +212 6/7 suivi de 8 chiffres)."
+    },
+    "emptyTitle": "Aucun contact de confiance",
+    "emptyDesc": "Ajoutez un proche ou un(e) ami(e) pour pouvoir partager vos trajets.",
+    "deleteConfirmTitle": "Retirer ce contact ?",
+    "deleteConfirmDesc": "{{name}} ne recevra plus vos partages de trajet.",
+    "savedToast": "Contact enregistré.",
+    "deletedToast": "Contact retiré.",
+    "editAria": "Modifier {{name}}",
+    "deleteAria": "Supprimer {{name}}"
+  },
+  "report": {
+    "title": "Signaler un incident",
+    "stepLabel": "Étape {{current}} sur {{total}}",
+    "step1Title": "Type d'incident",
+    "step1Subtitle": "Choisissez la catégorie la plus proche de la situation observée.",
+    "step2Title": "Quartier approximatif",
+    "step2Subtitle": "Sélectionnez une zone générale. Aucun point GPS précis n'est enregistré.",
+    "step3Title": "Moment et détails",
+    "step3Subtitle": "Indiquez la tranche horaire approximative et une courte note si utile.",
+    "types": {
+      "theft": "Vol ou tentative de vol",
+      "harassment": "Harcèlement",
+      "suspicious_activity": "Comportement suspect",
+      "other": "Autre incident"
+    },
+    "typeDescriptions": {
+      "theft": "Vol à l'arraché, pickpocket ou tentative sans confrontation.",
+      "harassment": "Harcèlement verbal, suivi insistant ou intimidation.",
+      "suspicious_activity": "Situation inhabituelle méritant une vigilance accrue.",
+      "other": "Éclairage défaillant, incident de voie publique ou autre fait."
+    },
+    "useApproxZoneBtn": "Estimer mon quartier actuel",
+    "detectingZone": "Détection de la zone…",
+    "zoneDetectedToast": "Zone approximative sélectionnée : {{zone}}",
+    "zoneDetectUnavailable": "Position indisponible. Sélectionnez votre quartier dans la liste.",
+    "zoneSearchPlaceholder": "Rechercher un quartier ou une ville…",
+    "noZonesMatch": "Aucun quartier ne correspond à votre recherche.",
+    "timeLabel": "Tranche horaire",
+    "times": {
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "evening": "Soirée",
+      "night": "Nuit"
+    },
+    "timeRanges": {
+      "morning": "06:00 – 12:00",
+      "afternoon": "12:00 – 18:00",
+      "evening": "18:00 – 22:00",
+      "night": "22:00 – 06:00"
+    },
+    "noteLabel": "Description courte",
+    "notePlaceholder": "Restez factuel, sans nommer ni décrire de personnes précises…",
+    "charCounter": "{{count}} / {{max}} caractères",
+    "anonymousLabel": "Publier de manière anonyme",
+    "anonymousDesc": "Recommandé. Votre pseudonyme n'est jamais affiché publiquement.",
+    "submitBtn": "Envoyer le signalement",
+    "rateLimitError": "Limite atteinte ({{max}} signalements par heure) pour éviter les abus. Réessayez plus tard.",
+    "requiredTypeError": "Veuillez sélectionner un type d'incident.",
+    "requiredZoneError": "Veuillez sélectionner un quartier approximatif.",
+    "requiredTimeError": "Veuillez choisir une tranche horaire.",
+    "successTitle": "Merci pour votre contribution",
+    "successBody": "Votre signalement a été enregistré de façon anonyme pour ce quartier et sera pris en compte dans la fenêtre communautaire.",
+    "successRetention": "Les signalements sont modérés en cas de litige et expirent automatiquement après 14 jours.",
+    "anotherBtn": "Nouveau signalement",
+    "doneBtn": "Retour à l'accueil"
+  },
+  "zones": {
+    "title": "Zones et activité signalée",
+    "subtitle": "Vue agrégée par quartier sur les 14 derniers jours.",
+    "phase2Notice": "Aperçu Phase 2 — Données agrégées avec seuil minimum de {{threshold}} signalements.",
+    "mapLegendTitle": "Légende de la carte",
+    "legendSufficient": "Seuil atteint (≥ {{threshold}} signalements)",
+    "legendBelowThreshold": "Données insuffisantes (< {{threshold}} signalements)",
+    "offlineMapNotice": "Mode carte hors ligne : affichage schématique des quartiers.",
+    "tileFallbackTitle": "Carte schématique hors ligne",
+    "tileFallbackSubtitle": "Les zones restent consultables sans connexion aux tuiles OpenStreetMap.",
+    "allCities": "Toutes les villes",
+    "selectZoneHint": "Touchez un quartier sur la carte ou la liste pour voir les détails.",
+    "belowThresholdTitle": "Pas encore assez de signalements",
+    "belowThresholdDesc": "Pour éviter les données trompeuses, les compteurs ne s'affichent qu'à partir de {{threshold}} signalements distincts.",
+    "reportsCountLabel": "{{count}} signalements récents",
+    "lastReportLabel": "Dernier signalement : {{date}}",
+    "dominantTimeLabel": "Créneau le plus fréquent : {{time}}",
+    "recentReportsHeading": "Derniers signalements dans cette zone",
+    "confirmBtn": "Confirmer ({{count}})",
+    "disputeBtn": "Contester ({{count}})",
+    "votedConfirmToast": "Merci, confirmation enregistrée.",
+    "votedDisputeToast": "Signalement marqué pour révision.",
+    "noReportsInZone": "Aucun signalement individuel affiché pour cette zone.",
+    "categoryBreakdown": "Répartition par catégorie",
+    "cities": {
+      "casablanca": "Casablanca",
+      "rabat": "Rabat"
+    },
+    "names": {
+      "maarif": "Maârif",
+      "gauthier": "Gauthier",
+      "racine": "Racine",
+      "oasis": "Oasis",
+      "anfa": "Anfa",
+      "mersSultan": "Mers Sultan",
+      "bourgogne": "Bourgogne",
+      "agdal": "Agdal",
+      "hassan": "Hassan",
+      "hayRiad": "Hay Riad"
+    }
+  },
+  "routes": {
+    "title": "Conseils d'itinéraire",
+    "subtitle": "Consultez l'activité récente signalée dans les zones traversées.",
+    "disclaimerTitle": "Indications purement informatives",
+    "disclaimerBody": "Ces repères reflètent uniquement des signalements communautaires non vérifiés et ne constituent aucune garantie de sécurité.",
+    "originLabel": "Zone de départ",
+    "destinationLabel": "Zone d'arrivée",
+    "selectPlaceholder": "Choisir un quartier",
+    "presetsTitle": "Trajets fréquents",
+    "planBtn": "Afficher les repères",
+    "sameZoneError": "Veuillez choisir une zone d'arrivée différente du départ.",
+    "selectBothError": "Sélectionnez un départ et une destination.",
+    "estimatedWalk": "Marche estimée : ~{{minutes}} min",
+    "traversedZonesTitle": "Zones traversées",
+    "belowThresholdNote": "Pas encore assez de signalements dans cette zone.",
+    "sufficientNote": "{{count}} signalements récents · {{date}}",
+    "emptyTitle": "Planifiez un trajet indicatif",
+    "emptyDesc": "Sélectionnez un départ et une destination ou choisissez un trajet suggéré ci-dessus.",
+    "advisories": {
+      "eveningBusy": "Axes commerçants fréquentés en début de soirée ; privilégiez les boulevards éclairés.",
+      "mainBoulevard": "Trajet traversant des avenues principales ; pensez au partage de trajet le soir.",
+      "tramCorridor": "Proche des stations de tramway ; vérifiez vos effets personnels aux heures d'affluence."
+    }
+  },
+  "settings": {
+    "title": "Réglages et confidentialité",
+    "languageSection": "Langue et affichage",
+    "themeSection": "Thème visuel",
+    "notificationsSection": "Préférences de notification",
+    "notifTrip": "Rappels de fin de trajet",
+    "notifTripDesc": "Alerte locale quelques minutes avant l'expiration du minuteur.",
+    "notifAlert": "Confirmations d'alerte",
+    "notifAlertDesc": "Retour sonore et visuel lors de l'envoi d'une alerte.",
+    "notifZones": "Mises à jour de zone (Phase 2)",
+    "notifZonesDesc": "Résumé hebdomadaire discret sans géolocalisation en arrière-plan.",
+    "privacySection": "Confidentialité et consentement",
+    "locationConsentLabel": "Consentement de localisation pour les trajets",
+    "locationConsentDesc": "Utilisé uniquement pendant un partage actif ou pour estimer une zone approximative.",
+    "viewPolicyBtn": "Consulter la politique de confidentialité",
+    "replayOnboardingBtn": "Revoir l'introduction",
+    "dataSection": "Vos données (Loi 09-08)",
+    "exportBtn": "Exporter mes données (JSON)",
+    "exportDesc": "Télécharge vos contacts, préférences et signalements locaux.",
+    "exportSuccessToast": "Fichier d'export JSON téléchargé.",
+    "deleteBtn": "Supprimer mes données",
+    "deleteDesc": "Efface immédiatement toutes vos données locales de cet appareil.",
+    "deleteConfirmTitle": "Supprimer toutes vos données locales ?",
+    "deleteConfirmDesc": "Vos contacts de confiance, consentements, trajets actifs et signalements locaux seront définitivement supprimés.",
+    "deleteConfirmBtn": "Tout supprimer",
+    "deletedToast": "Toutes vos données locales ont été supprimées.",
+    "appVersion": "Amin PWA v1.0 · Données locales chiffrables côté API"
+  },
+  "mockReports": {
+    "rep_901": "Vol de téléphone signalé près d'un arrêt de transport en début de soirée.",
+    "rep_902": "Harcèlement verbal signalé dans une rue secondaire peu éclairée.",
+    "rep_903": "Regroupement inhabituel observé près d'un passage piéton tard le soir.",
+    "rep_904": "Tentative de vol à l'arraché signalée à la sortie d'une station."
+  },
+  "heatmap": {
+    "navLabel": "Carte",
+    "title": "Carte des signalements",
+    "subtitle": "Activité communautaire agrégée par rue et par quartier.",
+    "openMapCta": "Ouvrir la carte des signalements",
+    "busyStreetsNote": "Les rues fréquentées reçoivent davantage de signalements car plus de personnes y passent.",
+    "areaTypes": {
+      "street": "Rues",
+      "neighborhood": "Quartiers"
+    },
+    "timeFilters": {
+      "label": "Moment de la journée",
+      "all": "Tout",
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "evening": "Soirée",
+      "night": "Nuit"
+    },
+    "windows": {
+      "label": "Période",
+      "7d": "7 jours",
+      "30d": "30 jours",
+      "90d": "90 jours"
+    },
+    "viewModes": {
+      "label": "Mode d'affichage",
+      "map": "Carte",
+      "list": "Liste"
+    },
+    "legendTitle": "Légende (signalements)",
+    "legendRange": "{{min}}–{{max}}",
+    "legendRangePlus": "{{min}}+",
+    "legendBelowThreshold": "Pas encore assez de signalements (< {{min}})",
+    "legendToggle": "Afficher ou masquer la légende",
+    "belowThresholdTitle": "Pas encore assez de signalements",
+    "belowThresholdExplanation": "Pour éviter des conclusions trompeuses sur des zones peu fréquentées, nous attendons au moins {{min}} signalements indépendants avant d'afficher des chiffres.",
+    "reportCountLabel": "{{count}} signalements enregistrés",
+    "lastReportedLabel": "Dernier signalement : {{time}}",
+    "byTimeTitle": "Répartition par moment de la journée",
+    "byTypeTitle": "Répartition par catégorie",
+    "reportHereBtn": "Signaler un incident ici",
+    "preselectedStreetBanner": "Rue sélectionnée pour ce signalement : {{name}}",
+    "emptyTitle": "Aucune zone n'atteint le seuil pour ces filtres",
+    "emptyDesc": "Moins de {{min}} signalements indépendants existent dans ce créneau. Essayez d'élargir la période.",
+    "widenWindowBtn": "Élargir à 90 jours",
+    "offlineBanner": "Mode hors ligne : le fond de carte peut être absent, mais les zones et statistiques restent disponibles en cache.",
+    "listHeading": "Liste alphabétique des zones",
+    "listSortedHint": "Classée par nom uniquement",
+    "mapAriaLabel": "Carte choroplèthe des signalements par rue et quartier"
+  }
+}

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--bg-desk);
+    color: var(--text-primary);
+  }
+
+  html[dir='rtl'] body {
+    font-family: var(--font-rtl);
+  }
+
+  html[dir='ltr'] body {
+    font-family: var(--font-ltr);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--bg-desk);
+    color: var(--text-primary);
+    font-size: var(--text-base);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+.app-shell {
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 430px;
+  margin-inline: auto;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .app-shell {
+    border-inline: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-elevated);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.safe-pb {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 5.5rem);
+}
+
+.safe-pt {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Leaflet calm token alignment & RTL control resilience */
+.leaflet-container {
+  font-family: inherit;
+  background-color: var(--bg-subtle);
+  z-index: 1;
+}
+
+.leaflet-control-attribution {
+  font-size: 11px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #142026 !important;
+}
+
+[data-theme='dark'] .leaflet-tile-pane {
+  filter: brightness(0.82) contrast(1.06) saturate(0.85);
+}
+
+[data-theme='dark'] .leaflet-control-attribution {
+  background: rgba(22, 32, 38, 0.88) !important;
+  color: #eff3f5 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

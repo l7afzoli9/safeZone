@@ -1,0 +1,131 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_maarif",
+        "name_ar": "المعاريف",
+        "name_fr": "Maârif"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6400, 33.5886],
+          [-7.6245, 33.5886],
+          [-7.6245, 33.5785],
+          [-7.6400, 33.5785],
+          [-7.6400, 33.5886]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_gauthier",
+        "name_ar": "غوتييه",
+        "name_fr": "Gauthier"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6345, 33.5955],
+          [-7.6195, 33.5955],
+          [-7.6195, 33.5886],
+          [-7.6345, 33.5886],
+          [-7.6345, 33.5955]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_racine",
+        "name_ar": "راسين",
+        "name_fr": "Racine"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6490, 33.5955],
+          [-7.6345, 33.5955],
+          [-7.6345, 33.5886],
+          [-7.6490, 33.5886],
+          [-7.6490, 33.5955]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_bourgogne",
+        "name_ar": "بورغون",
+        "name_fr": "Bourgogne"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6490, 33.6030],
+          [-7.6305, 33.6030],
+          [-7.6305, 33.5955],
+          [-7.6490, 33.5955],
+          [-7.6490, 33.6030]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_mers_sultan",
+        "name_ar": "مرس السلطان",
+        "name_fr": "Mers Sultan"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6245, 33.5886],
+          [-7.6085, 33.5886],
+          [-7.6085, 33.5775],
+          [-7.6245, 33.5775],
+          [-7.6245, 33.5886]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_oasis",
+        "name_ar": "الوازيس",
+        "name_fr": "Oasis"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6430, 33.5655],
+          [-7.6250, 33.5655],
+          [-7.6250, 33.5545],
+          [-7.6430, 33.5545],
+          [-7.6430, 33.5655]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "z_cas_anfa",
+        "name_ar": "أنفا",
+        "name_fr": "Anfa"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-7.6655, 33.5998],
+          [-7.6490, 33.5998],
+          [-7.6490, 33.5886],
+          [-7.6655, 33.5886],
+          [-7.6655, 33.5998]
+        ]]
+      }
+    }
+  ]
+}

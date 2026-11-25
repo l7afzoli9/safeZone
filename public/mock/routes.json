@@ -1,0 +1,28 @@
+{
+  "preset_routes": [
+    {
+      "id": "rt_cas_center",
+      "origin_zone_id": "z_cas_gauthier",
+      "destination_zone_id": "z_cas_maarif",
+      "traversed_zone_ids": ["z_cas_gauthier", "z_cas_racine", "z_cas_maarif"],
+      "estimated_walk_minutes": 18,
+      "advisory_key": "routes.advisories.eveningBusy"
+    },
+    {
+      "id": "rt_cas_west",
+      "origin_zone_id": "z_cas_maarif",
+      "destination_zone_id": "z_cas_oasis",
+      "traversed_zone_ids": ["z_cas_maarif", "z_cas_oasis"],
+      "estimated_walk_minutes": 26,
+      "advisory_key": "routes.advisories.mainBoulevard"
+    },
+    {
+      "id": "rt_rab_axis",
+      "origin_zone_id": "z_rab_agdal",
+      "destination_zone_id": "z_rab_hassan",
+      "traversed_zone_ids": ["z_rab_agdal", "z_rab_hassan"],
+      "estimated_walk_minutes": 32,
+      "advisory_key": "routes.advisories.tramCorridor"
+    }
+  ]
+}

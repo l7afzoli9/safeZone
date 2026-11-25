@@ -1,0 +1,4505 @@
+{
+  "min_reports": 5,
+  "areas": [
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T22:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T10:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 4,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T13:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-24T22:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 7,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-25T10:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 10,
+      "distinct_reporters": 8,
+      "last_report_at": "2026-11-25T13:00:00.000Z",
+      "by_type": {
+        "theft": 5,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 6,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T04:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-23T22:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 13,
+      "distinct_reporters": 11,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 5,
+        "harassment": 4,
+        "suspicious": 3,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 19,
+      "distinct_reporters": 15,
+      "last_report_at": "2026-11-24T13:00:00.000Z",
+      "by_type": {
+        "theft": 9,
+        "harassment": 5,
+        "suspicious": 4,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_maarif",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 11,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T04:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 4,
+        "suspicious": 2,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T07:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T12:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T07:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 7,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-25T12:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T07:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 13,
+      "distinct_reporters": 11,
+      "last_report_at": "2026-11-24T12:00:00.000Z",
+      "by_type": {
+        "theft": 6,
+        "harassment": 4,
+        "suspicious": 3,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_gauthier",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T02:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T01:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T09:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T21:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T01:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T09:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T21:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-24T01:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T09:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_mers_sultan",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-23T21:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T05:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T18:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-25T05:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T12:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T18:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-24T05:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_racine",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T12:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T18:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T10:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_bourgogne",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T00:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T08:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T20:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_oasis",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T17:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-21T17:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-16T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "neighborhood",
+      "area_id": "z_cas_anfa",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-20T17:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T20:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T09:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 4,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T14:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T05:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T20:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-25T09:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 10,
+      "distinct_reporters": 8,
+      "last_report_at": "2026-11-25T14:00:00.000Z",
+      "by_type": {
+        "theft": 5,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 6,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T05:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-23T20:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 11,
+      "distinct_reporters": 11,
+      "last_report_at": "2026-11-24T09:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 2
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 19,
+      "distinct_reporters": 15,
+      "last_report_at": "2026-11-24T14:00:00.000Z",
+      "by_type": {
+        "theft": 9,
+        "harassment": 5,
+        "suspicious": 4,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_w",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 11,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T05:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 4,
+        "suspicious": 2,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T15:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T06:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T11:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T03:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T15:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-25T06:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-25T11:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T03:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T15:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-24T06:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 11,
+      "distinct_reporters": 11,
+      "last_report_at": "2026-11-24T11:00:00.000Z",
+      "by_type": {
+        "theft": 5,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_anfa_bd",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T03:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T10:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T23:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 5,
+      "distinct_reporters": 5,
+      "last_report_at": "2026-11-25T10:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T23:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T10:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-24T02:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 9,
+      "distinct_reporters": 9,
+      "last_report_at": "2026-11-24T10:00:00.000Z",
+      "by_type": {
+        "theft": 4,
+        "harassment": 3,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_jean_jaures",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-23T23:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T07:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T19:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T22:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-25T07:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T19:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T00:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T22:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-24T07:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_al_massira",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T19:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T19:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T08:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T19:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-25T08:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-24T14:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T19:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 7,
+      "distinct_reporters": 7,
+      "last_report_at": "2026-11-24T08:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 2,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_zerktouni_e",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-23T14:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T09:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T09:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T12:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 3,
+      "distinct_reporters": 3,
+      "last_report_at": "2026-11-25T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T08:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T09:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T12:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 6,
+      "distinct_reporters": 6,
+      "last_report_at": "2026-11-24T04:00:00.000Z",
+      "by_type": {
+        "theft": 3,
+        "harassment": 2,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_normandie",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T08:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-24T06:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T01:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T06:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T01:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-23T06:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T01:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_roudani",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T02:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T11:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T05:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T11:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T05:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T11:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T02:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_2mars",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T05:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T21:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T21:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T08:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T22:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T21:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bd_bordeaux",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T20:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-24T01:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-25T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T23:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T01:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-25T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-23T23:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-23T01:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-24T00:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_bourgogne_bd",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-22T23:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T13:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T19:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T13:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-23T19:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T18:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T13:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-22T19:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T18:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_moulay_youssef",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T14:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-24T15:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T15:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T12:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-23T15:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_taza",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-24T11:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-24T11:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-20T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 4,
+      "distinct_reporters": 4,
+      "last_report_at": "2026-11-23T11:00:00.000Z",
+      "by_type": {
+        "theft": 2,
+        "harassment": 1,
+        "suspicious": 1,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_abdelkrim_khattabi",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T20:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T12:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T04:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_ben_tachfine",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T12:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-23T10:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-21T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-23T10:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-20T20:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-22T10:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_st",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-19T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T00:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T04:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T20:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T22:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_oasis_gare",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T00:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-16T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-22T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-16T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-22T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-21T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-15T22:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-16T18:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-21T14:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_corniche_anfa",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-20T16:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "morning",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-15T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "afternoon",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "evening",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-21T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "night",
+      "window": "7d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "morning",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-15T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "afternoon",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "evening",
+      "window": "30d",
+      "report_count": 1,
+      "distinct_reporters": 1,
+      "last_report_at": "2026-11-21T02:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 1
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "night",
+      "window": "30d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-18T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "morning",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-14T16:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "afternoon",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-16T08:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "evening",
+      "window": "90d",
+      "report_count": 2,
+      "distinct_reporters": 2,
+      "last_report_at": "2026-11-20T02:00:00.000Z",
+      "by_type": {
+        "theft": 1,
+        "harassment": 1,
+        "suspicious": 0,
+        "other": 0
+      }
+    },
+    {
+      "area_type": "street",
+      "area_id": "st_cas_franklin_roosevelt",
+      "time_bucket": "night",
+      "window": "90d",
+      "report_count": 0,
+      "distinct_reporters": 0,
+      "last_report_at": "2026-11-17T14:00:00.000Z",
+      "by_type": {
+        "theft": 0,
+        "harassment": 0,
+        "suspicious": 0,
+        "other": 0
+      }
+    }
+  ]
+}
