@@ -8,9 +8,11 @@
 
 - **Official Emergency Shortcuts:** Persistent one-tap `tel:19` (DGSN Police) and `tel:177` (Gendarmerie Royale) actions.
 - **Anonymous Coarse-Zone Incident Reporting (Phase 1):** 3-step flow with incident type, approximate neighborhood/street picker (with optional client-side quantization in `src/services/geo.ts` that never stores or sends raw GPS coordinates), time range (`morning`, `afternoon`, `evening`, `night`), optional description with character counter, and hourly anti-abuse rate limiting.
-- **Merged Map-First Itinéraires & Heat Map (Phase 2 Preview):** Full-bleed React-Leaflet choropleth map (`/routes`) with `d3-scale`/`d3-interpolate` (5-step single-hue sequential teal ramp), `@turf/turf`, automatic offline SVG schematic fallback, strict `MIN_REPORTS` (`5` distinct reporters) threshold gating, accessible alphabetical list view, route planner overlay sheet highlighting traversed paths, and mandatory *"User-reported, unverified"* and *"Busy streets get more reports..."* notes.
+- **Merged Map-First Itinéraires & Thermal Heat Map (Phase 2 Preview):** Full-bleed React-Leaflet map (`/routes`) with a custom `<canvas>` thermal density overlay (`ThermalOverlay.tsx`, `indigo/violet → cyan → green → yellow → orange → red` driven by aggregated report counts), `@turf/turf`, automatic offline SVG schematic fallback, strict `MIN_REPORTS` (`5` distinct reporters) threshold gating, accessible alphabetical list view, route planner overlay sheet highlighting traversed paths, and mandatory *"User-reported, unverified"* and *"Busy streets get more reports..."* notes.
 - **Bilingual RTL/LTR & Theming:** Instant switching across French (`fr`, LTR) and Modern Standard Arabic (`ar`, RTL) in the top app bar and Settings, plus `System / Light / Dark` themes persisted in `localStorage`.
 - **Law 09-08 Data Controls:** Full JSON data export and immediate local data deletion in Settings (accessible from the top app bar gear icon).
+
+See [`APP_OVERVIEW.md`](APP_OVERVIEW.md) for a full architecture and screen-by-screen overview.
 
 ---
 
