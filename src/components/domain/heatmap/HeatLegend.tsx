@@ -75,6 +75,17 @@ export const HeatLegend: React.FC = () => {
                 {t('heatmap.legendBelowThreshold', { min: formatNumber(MIN_REPORTS) })}
               </span>
             </div>
+
+            <div className="flex flex-wrap items-center gap-4 border-t border-[var(--border-subtle)] pt-2 text-[0.75rem] font-semibold text-[var(--text-secondary)]">
+              <span className="inline-flex items-center gap-1.5">
+                <span aria-hidden="true" className="h-3 w-3 rounded-full border border-white bg-[#0369A1]" />
+                {t('heatmap.policeType')}
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span aria-hidden="true" className="h-3 w-3 rounded-full border border-white bg-[#B45309]" />
+                {t('heatmap.gendarmerieType')}
+              </span>
+            </div>
           </div>
         )}
       </div>

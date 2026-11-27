@@ -291,6 +291,14 @@
     "offlineBanner": "وضع عدم الاتصال: قد تغيب خريطة الأساس، لكن الأحياء والإحصاءات تبقى ظاهرة من الذاكرة المؤقتة.",
     "listHeading": "قائمة المناطق أبجدياً",
     "listSortedHint": "مرتبة بالاسم فقط",
-    "mapAriaLabel": "خريطة تدرج البلاغات حسب الشوارع والأحياء"
+    "mapAriaLabel": "خريطة تدرج البلاغات حسب الشوارع والأحياء",
+    "stationsToggle": "المراكز ({{count}})",
+    "stationsToggleAria": "إظهار أو إخفاء مراكز الشرطة والدرك الملكي القريبة",
+    "stationDistanceKm": "{{distance}} كم",
+    "stationCallBtn": "اتصال ({{number}})",
+    "stationDirectionsBtn": "الاتجاهات",
+    "policeType": "الشرطة (الأمن الوطني)",
+    "gendarmerieType": "الدرك الملكي",
+    "nearbyStationsTitle": "أقرب مراكز الشرطة والدرك"
   }
 }

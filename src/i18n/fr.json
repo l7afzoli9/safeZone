@@ -291,6 +291,14 @@
     "offlineBanner": "Mode hors ligne : le fond de carte peut être absent, mais les zones et statistiques restent disponibles en cache.",
     "listHeading": "Liste alphabétique des zones",
     "listSortedHint": "Classée par nom uniquement",
-    "mapAriaLabel": "Carte choroplèthe des signalements par rue et quartier"
+    "mapAriaLabel": "Carte choroplèthe des signalements par rue et quartier",
+    "stationsToggle": "Postes ({{count}})",
+    "stationsToggleAria": "Afficher ou masquer les postes de police et gendarmerie à proximité",
+    "stationDistanceKm": "{{distance}} km",
+    "stationCallBtn": "Appeler ({{number}})",
+    "stationDirectionsBtn": "Itinéraire",
+    "policeType": "Police (DGSN)",
+    "gendarmerieType": "Gendarmerie Royale",
+    "nearbyStationsTitle": "Postes de police les plus proches"
   }
 }

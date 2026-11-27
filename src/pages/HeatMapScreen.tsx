@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { FeatureCollection, LineString, Polygon } from 'geojson';
-import { Compass, Info, Layers, MapPin, Navigation, WifiOff, X } from 'lucide-react';
+import { Compass, Info, Layers, MapPin, Navigation, Shield, WifiOff, X } from 'lucide-react';
 import { MIN_REPORTS } from '../constants/safety';
 import { useI18n } from '../i18n';
 import { useApp } from '../context/AppContext';
@@ -9,6 +9,7 @@ import { api } from '../services/api';
 import type {
   AreaAggregate,
   AreaType,
+  NearbyStation,
   NeighborhoodProperties,
   RecencyWindow,
   RouteHintPreset,
@@ -49,6 +50,8 @@ export const HeatMapScreen: React.FC = () => {
   const [stats, setStats] = useState<AreaAggregate[]>([]);
   const [neighborhoodStats, setNeighborhoodStats] = useState<AreaAggregate[]>([]);
   const [presets, setPresets] = useState<RouteHintPreset[]>([]);
+  const [stations, setStations] = useState<NearbyStation[]>([]);
+  const [showStations, setShowStations] = useState(true);
   const [geoLoading, setGeoLoading] = useState(true);
   const [statsLoading, setStatsLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
@@ -87,14 +90,16 @@ export const HeatMapScreen: React.FC = () => {
     setGeoLoading(true);
     setLoadError(false);
     try {
-      const [nGeo, sGeo, routePresets] = await Promise.all([
+      const [nGeo, sGeo, routePresets, nearbyStations] = await Promise.all([
         api.getNeighborhoodsGeoJson(),
         api.getStreetsGeoJson(),
         api.getRoutePresets(),
+        api.getNearbyStations(33.586, -7.632, 25).catch(() => []),
       ]);
       setNeighborhoods(nGeo);
       setStreets(sGeo);
       setPresets(routePresets);
+      setStations(nearbyStations);
     } catch {
       setLoadError(true);
     } finally {
@@ -289,14 +294,34 @@ export const HeatMapScreen: React.FC = () => {
     <div className="flex flex-col">
       {/* Compact Top Docked Controls */}
       <div className="flex flex-col gap-2.5 px-4 pb-3 pt-3">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-2">
           <h1 className="text-[1.25rem] font-extrabold text-[var(--text-primary)]">
             {t('routes.title')}
           </h1>
-          <Badge tone="primary">
-            <Layers className="h-3.5 w-3.5" aria-hidden="true" />
-            <span>{t('common.phase2Badge')}</span>
-          </Badge>
+          <div className="flex items-center gap-1.5">
+            {stations.length > 0 && viewMode === 'map' && (
+              <button
+                type="button"
+                aria-pressed={showStations}
+                aria-label={t('heatmap.stationsToggleAria')}
+                onClick={() => setShowStations((prev) => !prev)}
+                className={
+                  showStations
+                    ? 'inline-flex min-h-[34px] items-center gap-1 rounded-full border border-[#0369A1]/40 bg-[#0369A1]/15 px-2.5 text-[0.75rem] font-bold text-[#0369A1] dark:text-[#38BDF8] cursor-pointer'
+                    : 'inline-flex min-h-[34px] items-center gap-1 rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-2.5 text-[0.75rem] font-semibold text-[var(--text-secondary)] cursor-pointer'
+                }
+              >
+                <Shield className="h-3.5 w-3.5" aria-hidden="true" />
+                <span>
+                  {t('heatmap.stationsToggle', { count: formatNumber(stations.length) })}
+                </span>
+              </button>
+            )}
+            <Badge tone="primary">
+              <Layers className="h-3.5 w-3.5" aria-hidden="true" />
+              <span>{t('common.phase2Badge')}</span>
+            </Badge>
+          </div>
         </div>
 
         {!isLoading && !loadError && (
@@ -378,6 +403,8 @@ export const HeatMapScreen: React.FC = () => {
               statsById={statsById}
               selectedAreaId={selectedArea?.areaId ?? null}
               highlightedNeighborhoodIds={highlightedNeighborhoodIds}
+              stations={stations}
+              showStations={showStations}
               onSelectArea={handleSelectArea}
               offline={isOffline}
               onTileFailure={() => setTileFailed(true)}
@@ -441,6 +468,47 @@ export const HeatMapScreen: React.FC = () => {
             </Card>
 
             <HeatLegend />
+
+            {showStations && stations.length > 0 && (
+              <Card className="flex flex-col gap-2.5 p-3.5">
+                <div className="flex items-center gap-2">
+                  <Shield className="h-4 w-4 text-[#0369A1] dark:text-[#38BDF8]" aria-hidden="true" />
+                  <h2 className="text-[0.9375rem] font-bold text-[var(--text-primary)]">
+                    {t('heatmap.nearbyStationsTitle')}
+                  </h2>
+                </div>
+                <div className="flex flex-col gap-2">
+                  {stations.slice(0, 3).map((st, idx) => {
+                    const isGendarmerie = st.type === 'Gendarmerie Royale';
+                    const callNumber = st.phone || (isGendarmerie ? '177' : '19');
+                    return (
+                      <div
+                        key={`near-card-${idx}-${st.name}`}
+                        className="flex items-center justify-between gap-2 rounded-[var(--radius-md)] border border-[var(--border-subtle)] bg-[var(--bg-subtle)]/50 px-3 py-2"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <p className="truncate text-[0.8125rem] font-bold text-[var(--text-primary)]">
+                            {st.name}
+                          </p>
+                          <p className="truncate text-[0.75rem] text-[var(--text-secondary)]">
+                            {t('heatmap.stationDistanceKm', {
+                              distance: formatNumber(st.distance_km),
+                            })}{' '}
+                            · {st.address}
+                          </p>
+                        </div>
+                        <a
+                          href={`tel:${callNumber.replace(/\s+/g, '')}`}
+                          className="shrink-0 rounded-[var(--radius-sm)] bg-[#0F5C66] px-2.5 py-1.5 text-[0.75rem] font-bold text-white no-underline"
+                        >
+                          {callNumber}
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Card>
+            )}
           </div>
         </>
       )}

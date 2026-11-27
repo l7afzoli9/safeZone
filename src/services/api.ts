@@ -7,7 +7,9 @@ import type {
   CreateReportInput,
   ExportedUserData,
   IncidentReport,
+  NearbyStation,
   NeighborhoodProperties,
+  PoliceStation,
   RecencyWindow,
   ReportsPayload,
   RouteHintPreset,
@@ -350,6 +352,54 @@ export const api = {
   async getRoutePresets(): Promise<RouteHintPreset[]> {
     const payload = await fetchMockJson<RoutesPayload>('/mock/routes.json');
     return payload.preset_routes;
+  },
+
+  async getNearbyStations(
+    lat = 33.586,
+    lon = -7.632,
+    radiusKm = 12
+  ): Promise<NearbyStation[]> {
+    const envBase = (import.meta as { env?: Record<string, string | undefined> }).env?.VITE_POLICE_API_URL;
+    const isLocalHost =
+      typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+    const apiBase = envBase || (isLocalHost ? 'http://127.0.0.1:8000' : '');
+
+    if (apiBase) {
+      try {
+        const controller = new AbortController();
+        const timer = window.setTimeout(() => controller.abort(), 1200);
+        const res = await fetch(
+          `${apiBase}/stations/nearby?lat=${lat}&lon=${lon}&radius_km=${radiusKm}`,
+          { signal: controller.signal }
+        );
+        window.clearTimeout(timer);
+        if (res.ok) {
+          return (await res.json()) as NearbyStation[];
+        }
+      } catch {
+        // Gracefully fall back to bundled static stations.json when API server is offline
+      }
+    }
+
+    const stations = await fetchMockJson<PoliceStation[]>('/mock/stations.json');
+    const toRad = (deg: number) => (deg * Math.PI) / 180;
+    const haversine = (aLat: number, aLon: number, bLat: number, bLon: number) => {
+      const dLat = toRad(bLat - aLat);
+      const dLon = toRad(bLon - aLon);
+      const x =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLon / 2) ** 2;
+      return 2 * 6371 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+    };
+
+    return stations
+      .map((st) => ({
+        ...st,
+        distance_km: Number(haversine(lat, lon, st.latitude, st.longitude).toFixed(2)),
+      }))
+      .filter((st) => st.distance_km <= radiusKm)
+      .sort((a, b) => a.distance_km - b.distance_km);
   },
 
   async exportMyData(): Promise<ExportedUserData> {

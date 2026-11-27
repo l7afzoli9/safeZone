@@ -3,6 +3,8 @@ import {
   CircleMarker,
   GeoJSON,
   MapContainer,
+  Pane,
+  Popup,
   TileLayer,
   Tooltip,
   ZoomControl,
@@ -18,6 +20,7 @@ import { useI18n } from '../../../i18n';
 import type {
   AreaAggregate,
   AreaType,
+  NearbyStation,
   NeighborhoodProperties,
   StreetProperties,
 } from '../../../types';
@@ -32,6 +35,8 @@ interface AreaLayerProps {
   statsById: Map<string, AreaAggregate>;
   selectedAreaId: string | null;
   highlightedNeighborhoodIds?: Set<string>;
+  stations?: NearbyStation[];
+  showStations?: boolean;
   onSelectArea: (area: SelectedAreaInfo) => void;
   offline: boolean;
   onTileFailure: () => void;
@@ -82,6 +87,8 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
   statsById,
   selectedAreaId,
   highlightedNeighborhoodIds,
+  stations = [],
+  showStations = false,
   onSelectArea,
   offline,
   onTileFailure,
@@ -475,6 +482,73 @@ export const AreaLayer: React.FC<AreaLayerProps> = ({
               </CircleMarker>
             );
           })}
+
+        {/* Nearby Official Police (DGSN) & Gendarmerie Royale Station Markers */}
+        {showStations && stations.length > 0 && (
+          <Pane name="police-stations-pane" style={{ zIndex: 650 }}>
+            {stations.map((st, idx) => {
+              const isGendarmerie = st.type === 'Gendarmerie Royale';
+              const callNumber = st.phone || (isGendarmerie ? '177' : '19');
+              const typeLabel = isGendarmerie
+                ? t('heatmap.gendarmerieType')
+                : t('heatmap.policeType');
+              return (
+                <CircleMarker
+                  key={`st-${idx}-${st.latitude}-${st.longitude}`}
+                  center={[st.latitude, st.longitude]}
+                  radius={6}
+                  pane="police-stations-pane"
+                  pathOptions={{
+                    color: '#FFFFFF',
+                    weight: 2,
+                    fillColor: isGendarmerie ? '#B45309' : '#0369A1',
+                    fillOpacity: 0.95,
+                  }}
+                >
+                  <Popup>
+                    <div className="flex min-w-[190px] flex-col gap-1.5 text-[0.8125rem]">
+                      <span
+                        className={cn(
+                          'inline-block w-fit rounded-full px-2 py-0.5 text-[0.6875rem] font-bold',
+                          isGendarmerie
+                            ? 'bg-amber-100 text-amber-900'
+                            : 'bg-sky-100 text-sky-900'
+                        )}
+                      >
+                        {typeLabel}
+                      </span>
+                      <strong className="text-[0.875rem] leading-snug text-slate-900">
+                        {st.name}
+                      </strong>
+                      <span className="text-[0.75rem] text-slate-600">
+                        {t('heatmap.stationDistanceKm', {
+                          distance: formatNumber(st.distance_km),
+                        })}{' '}
+                        · {st.address}
+                      </span>
+                      <div className="mt-1 flex items-center gap-2">
+                        <a
+                          href={`tel:${callNumber.replace(/\s+/g, '')}`}
+                          className="inline-flex items-center rounded-md bg-[#0F5C66] px-2.5 py-1 text-[0.75rem] font-bold !text-white no-underline"
+                        >
+                          {t('heatmap.stationCallBtn', { number: callNumber })}
+                        </a>
+                        <a
+                          href={`https://www.google.com/maps/dir/?api=1&destination=${st.latitude},${st.longitude}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-md border border-slate-300 px-2.5 py-1 text-[0.75rem] font-semibold !text-slate-800 no-underline"
+                        >
+                          {t('heatmap.stationDirectionsBtn')}
+                        </a>
+                      </div>
+                    </div>
+                  </Popup>
+                </CircleMarker>
+              );
+            })}
+          </Pane>
+        )}
       </MapContainer>
     </div>
   );

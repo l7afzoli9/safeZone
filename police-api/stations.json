@@ -1,0 +1,389 @@
+[
+  {
+    "name": "Commandement Régional de la Gendarmerie Royale de Casablanca",
+    "type": "Gendarmerie Royale",
+    "city": "Casablanca",
+    "address": "Secteur Gauthier, Casablanca",
+    "latitude": 33.58543,
+    "longitude": -7.623845,
+    "phone": null
+  },
+  {
+    "name": "Gendarmerie Royale",
+    "type": "Gendarmerie Royale",
+    "city": "Casablanca",
+    "address": "Secteur Anfa / Ain Diab, Casablanca",
+    "latitude": 33.591918,
+    "longitude": -7.677192,
+    "phone": null
+  },
+  {
+    "name": "Gendarmerie Royale (2 mars)",
+    "type": "Gendarmerie Royale",
+    "city": "Casablanca",
+    "address": "Secteur Mers Sultan / Habous, Casablanca",
+    "latitude": 33.572909,
+    "longitude": -7.61552,
+    "phone": null
+  },
+  {
+    "name": "La Gendarmerie Royale de Bouskoura",
+    "type": "Gendarmerie Royale",
+    "city": "Casablanca",
+    "address": "Secteur Bouskoura, Casablanca",
+    "latitude": 33.456782,
+    "longitude": -7.650599,
+    "phone": null
+  },
+  {
+    "name": "13ème Arrondissement",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Beauséjour, Casablanca",
+    "latitude": 33.575747,
+    "longitude": -7.651245,
+    "phone": null
+  },
+  {
+    "name": "21",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Ben M'Sick / Sbata, Casablanca",
+    "latitude": 33.553902,
+    "longitude": -7.578213,
+    "phone": null
+  },
+  {
+    "name": "4éme Arrondissement",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Ben M'Sick / Sbata, Casablanca",
+    "latitude": 33.557347,
+    "longitude": -7.573587,
+    "phone": null
+  },
+  {
+    "name": "Arrondissement Moulay Rachid",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Moulay Rachid / Sidi Othmane, Casablanca",
+    "latitude": 33.564527,
+    "longitude": -7.533951,
+    "phone": null
+  },
+  {
+    "name": "Brigade Nationale de la Police Judiciaire",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Gauthier, Casablanca",
+    "latitude": 33.58635,
+    "longitude": -7.628208,
+    "phone": null
+  },
+  {
+    "name": "Commissariat de Aïn Sebaa",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Aïn Sebaâ, Casablanca",
+    "latitude": 33.600077,
+    "longitude": -7.52763,
+    "phone": null
+  },
+  {
+    "name": "District de Hay Hassani",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Hay Hassani / Oulfa, Casablanca",
+    "latitude": 33.569241,
+    "longitude": -7.672446,
+    "phone": null
+  },
+  {
+    "name": "Police Tramway",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Oasis / Cil, Casablanca",
+    "latitude": 33.565734,
+    "longitude": -7.626977,
+    "phone": null
+  },
+  {
+    "name": "Police touristique",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Belyout / Centre-Ville, Casablanca",
+    "latitude": 33.598839,
+    "longitude": -7.614239,
+    "phone": null
+  },
+  {
+    "name": "Poste brigade touristique",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Belyout / Centre-Ville, Casablanca",
+    "latitude": 33.588997,
+    "longitude": -7.620739,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Anfa / Ain Diab",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Anfa / Ain Diab, Casablanca",
+    "latitude": 33.582692,
+    "longitude": -7.696542,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Boulevard Mohamed Bouziane",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard Mohamed Bouziane, Casablanca",
+    "latitude": 33.5577,
+    "longitude": -7.564991,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Boulevard Moulay Youssef شارع مولاي يوسف",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard Moulay Youssef شارع مولاي يوسف, Casablanca",
+    "latitude": 33.604856,
+    "longitude": -7.633254,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Boulevard de la Corniche شارع الكورنيش",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard de la Corniche شارع الكورنيش, Casablanca",
+    "latitude": 33.596179,
+    "longitude": -7.66896,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Bourgogne",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Bourgogne, Casablanca",
+    "latitude": 33.606086,
+    "longitude": -7.634878,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Gauthier",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Gauthier, Casablanca",
+    "latitude": 33.586389,
+    "longitude": -7.622277,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Hay Hassani / Oulfa",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Hay Hassani / Oulfa, Casablanca",
+    "latitude": 33.55888,
+    "longitude": -7.693538,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Maârif",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Maârif, Casablanca",
+    "latitude": 33.580694,
+    "longitude": -7.633345,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Mers Sultan / Habous",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Mers Sultan / Habous, Casablanca",
+    "latitude": 33.576732,
+    "longitude": -7.599031,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Oasis / Cil",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Oasis / Cil, Casablanca",
+    "latitude": 33.51499,
+    "longitude": -7.645333,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Oasis / Cil",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Oasis / Cil, Casablanca",
+    "latitude": 33.520955,
+    "longitude": -7.651819,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Roches Noires / Belvédère",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Roches Noires / Belvédère, Casablanca",
+    "latitude": 33.588479,
+    "longitude": -7.597057,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Rue Allal Ben Abdellah",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Rue Allal Ben Abdellah, Casablanca",
+    "latitude": 33.595557,
+    "longitude": -7.614765,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Sidi Bernoussi",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Bernoussi, Casablanca",
+    "latitude": 33.607605,
+    "longitude": -7.499776,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Sidi Bernoussi",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Bernoussi, Casablanca",
+    "latitude": 33.616163,
+    "longitude": -7.497013,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police Ennassim",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Hay Hassani / Oulfa, Casablanca",
+    "latitude": 33.521943,
+    "longitude": -7.657884,
+    "phone": null
+  },
+  {
+    "name": "Prefecture de Casablanca - Disctrict du Port",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard des Almohades, Casablanca",
+    "latitude": 33.600583,
+    "longitude": -7.614821,
+    "phone": null
+  },
+  {
+    "name": "Prefecture de Police de Casablanca",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Rue Zoubeir Bnou Auoam, Casablanca",
+    "latitude": 33.599887,
+    "longitude": -7.580093,
+    "phone": null
+  },
+  {
+    "name": "Préfecture de Police",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard Qods, Casablanca",
+    "latitude": 33.542207,
+    "longitude": -7.58868,
+    "phone": null
+  },
+  {
+    "name": "Préfecture de Police",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Boulevard Mohamed Zerktouni شارع محمد الزرقطوني, Casablanca",
+    "latitude": 33.584014,
+    "longitude": -7.629086,
+    "phone": null
+  },
+  {
+    "name": "Préfecture de police du Grand Casablanca Arr de Police Essalam, S.A.C 1",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Beauséjour, Casablanca",
+    "latitude": 33.573097,
+    "longitude": -7.655019,
+    "phone": null
+  },
+  {
+    "name": "Sûreté Nationale",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Belyout / Centre-Ville, Casablanca",
+    "latitude": 33.598143,
+    "longitude": -7.621623,
+    "phone": null
+  },
+  {
+    "name": "commisariat azhar",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Bernoussi, Casablanca",
+    "latitude": 33.602382,
+    "longitude": -7.492183,
+    "phone": null
+  },
+  {
+    "name": "commissariat de police ain chock",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Ain Chock / Californie, Casablanca",
+    "latitude": 33.54092,
+    "longitude": -7.593884,
+    "phone": null
+  },
+  {
+    "name": "بوليس درب ميلان",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Ben M'Sick / Sbata, Casablanca",
+    "latitude": 33.564743,
+    "longitude": -7.580864,
+    "phone": null
+  },
+  {
+    "name": "مصلحة حوادث السير",
+    "type": "Police (DGSN)",
+    "city": "Casablanca",
+    "address": "Secteur Sidi Moumen, Casablanca",
+    "latitude": 33.594814,
+    "longitude": -7.509226,
+    "phone": null
+  },
+  {
+    "name": "25",
+    "type": "Police (DGSN)",
+    "city": "Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "address": "Boulevard du Nil, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "latitude": 33.559322,
+    "longitude": -7.567127,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Boulevard de l'Océan Atlantique شارع المحيط الأطلسي",
+    "type": "Police (DGSN)",
+    "city": "Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "address": "Boulevard de l'Océan Atlantique شارع المحيط الأطلسي, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "latitude": 33.584443,
+    "longitude": -7.689606,
+    "phone": null
+  },
+  {
+    "name": "Poste de Police (DGSN) — Boulevard de la Corniche شارع الكورنيش",
+    "type": "Police (DGSN)",
+    "city": "Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "address": "Boulevard de la Corniche شارع الكورنيش, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء",
+    "latitude": 33.593143,
+    "longitude": -7.678545,
+    "phone": null
+  }
+]

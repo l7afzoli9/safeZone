@@ -157,3 +157,17 @@ export interface ExportedUserData {
   session: UserSession;
   submitted_reports: IncidentReport[];
 }
+
+export interface PoliceStation {
+  name: string;
+  type: 'Police (DGSN)' | 'Gendarmerie Royale';
+  city: string;
+  address: string;
+  latitude: number;
+  longitude: number;
+  phone: string | null;
+}
+
+export interface NearbyStation extends PoliceStation {
+  distance_km: number;
+}
