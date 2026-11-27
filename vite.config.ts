@@ -13,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: 'Amin',
         short_name: 'Amin',
-        description: 'Community safety and trusted trip sharing PWA',
+        description: 'Community safety and anonymous incident reporting PWA',
         theme_color: '#0F5C66',
         background_color: '#F8F7F4',
         display: 'standalone',
@@ -43,7 +43,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2,json,geojson}'],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
         navigateFallback: '/index.html',
+        navigateFallbackDenylist: [/^\/api\//, /^\/mock\//],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/[a-c]\.tile\.openstreetmap\.org\/.*/i,

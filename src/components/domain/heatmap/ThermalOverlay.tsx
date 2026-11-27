@@ -21,7 +21,7 @@ function buildThermalLut(): Uint8ClampedArray {
   const canvas = document.createElement('canvas');
   canvas.width = 256;
   canvas.height = 1;
-  const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
   if (!ctx) return new Uint8ClampedArray(256 * 4);
 
   const grad = ctx.createLinearGradient(0, 0, 256, 0);
@@ -77,7 +77,7 @@ export const ThermalOverlay: React.FC<ThermalOverlayProps> = ({ points }) => {
         canvas.height = size.y;
       }
 
-      const ctx = canvas.getContext('2d');
+      const ctx = canvas.getContext('2d', { willReadFrequently: true });
       if (!ctx) return;
 
       ctx.clearRect(0, 0, size.x, size.y);
